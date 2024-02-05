@@ -1,0 +1,19 @@
+
+
+// ABOUT US SECTIONS
+@import "./components/about/about-us-style-one";
+
+// LAYOUTS START
+@import "./layouts/header";
+@import "./layouts/footer";
+// LAYOUTS END
+
+// BASE START
+@import "./base/reset";
+@import "./base/mixins";
+@import "./base/variables";
+@import "./base/theme-default";
+@import "./base/helpers";
+@import "./base/typography";
+@import "./base/colors"; 
+// BASE END
