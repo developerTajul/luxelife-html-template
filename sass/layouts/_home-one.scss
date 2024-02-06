@@ -1,0 +1,19 @@
+
+
+// ABOUT US SECTION
+.about-us-section{
+    padding: 120px 0px;
+    background: $white;
+    margin: 0 auto;
+    .about-us-left{
+        .inner-image{
+            img{
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+    .about-us-right{
+        margin: 50px auto;
+    }
+}
