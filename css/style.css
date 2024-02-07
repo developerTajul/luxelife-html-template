@@ -1860,6 +1860,82 @@
   letter-spacing: 0em;
   text-align: left;
 }
+.comment-form.style-one .comment-form-title h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 15px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #23262D;
+}
+.comment-form.style-one .comment-form-text p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #616670;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=text], .comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=email] {
+  width: 100%;
+  padding: 30px 0px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=text]::placeholder, .comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=email]::placeholder {
+  text-indent: 15px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=text]:focus, .comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=email]:focus {
+  border: 1px solid #D9A14C !important;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group textarea {
+  width: 100%;
+  padding: 98px 0px;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  margin-bottom: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #E3E3E3;
+  background: #ffffff;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group textarea:focus {
+  border-color: transparent;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group textarea::placeholder {
+  text-indent: 15px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group .comment-btn {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.2799999714px;
+  padding: 30px 60px;
+  background: #D9A14C;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group .comment-btn i {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0em;
+  margin-left: 5px;
+  color: #ffffff;
+}
+
 .header-area {
   position: fixed;
   width: 100%;
@@ -2238,7 +2314,7 @@
   line-height: 120%;
   padding: 10px 20px;
   color: #23262D;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #E3E3E3;
   margin-left: 0;
   font-size: 16px;
 }
@@ -2358,6 +2434,11 @@
 .pricing-section {
   padding: 120px 0px;
   background: #ffffff;
+}
+
+.comment-form-section {
+  padding: 120px 0px;
+  background: #E3E3E3;
 }
 
 .footer {
