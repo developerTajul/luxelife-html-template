@@ -1,3 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.theme-btn {
+  padding: 30px 70px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.2799999714px;
+  text-align: center;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background: #D9A14C;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.theme-btn:hover {
+  border: 1px solid #D9A14C;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
+  color: #D9A14C;
+  background: #ffffff;
+}
+
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
 .mt-5 {
@@ -1762,6 +1793,28 @@
   color: #616670;
 }
 
+.icon-content.style-two {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.icon-content.style-two .icon {
+  margin-right: 15px;
+}
+.icon-content.style-two .icon i {
+  font-size: 20px;
+  color: #D9A14C;
+}
+.icon-content.style-two .content p {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #616670;
+}
+
 .title-box.style-one .title h4 {
   font-family: "Rajdhani";
   font-size: 18px;
@@ -2429,6 +2482,10 @@
 }
 .about-us-section .about-us-right {
   margin: 50px auto;
+}
+
+.about-us-section .about-us-right-content .btn-wrapper {
+  margin-top: 55px;
 }
 
 .pricing-section {
