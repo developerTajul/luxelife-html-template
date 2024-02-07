@@ -21,10 +21,13 @@
 
 @import "./components/title-box/title-box-style-one";
 @import "./components/title-box/title-box-style-two";
+
+@import "./components/pricing-card/pricing-card-style-one";
 // COMPONENTS END
 
 // LAYOUTS START
 @import "./layouts/header";
-@import "./layouts/footer";
 @import "./layouts/pages";
+@import "./layouts/pricing-page";
+@import "./layouts/footer";
 // LAYOUTS END

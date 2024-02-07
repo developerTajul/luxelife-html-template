@@ -3,9 +3,16 @@
     &.style-one{
         display: flex;
         align-items: start;
-        justify-content: center;
+        justify-content: start;
         .icon{
             margin-right: 15px;
+
+            i{
+                font-size: 10px; 
+                padding: 3px;
+                color: $white;
+                background: $primary-color;
+            }
     
         }
     
