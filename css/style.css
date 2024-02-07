@@ -1822,6 +1822,7 @@
   line-height: 27px;
   letter-spacing: 4px;
   text-align: left;
+  text-transform: uppercase;
   color: #D9A14C;
 }
 .title-box.style-one .sub-title h2 {
@@ -1987,6 +1988,63 @@
   letter-spacing: 0em;
   margin-left: 5px;
   color: #ffffff;
+}
+
+.blog-news-card.style-one {
+  margin-top: 60px;
+  position: relative;
+  height: 700px;
+}
+.blog-news-card.style-one .card-image img {
+  z-index: 1;
+}
+.blog-news-card.style-one .card-content {
+  position: absolute;
+  width: 90%;
+  bottom: 15%;
+  padding: 15px 25px 70px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
+  border-bottom: 1px solid transparent;
+  background: #ffffff;
+  z-index: 2;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.blog-news-card.style-one .card-content .content-history {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.blog-news-card.style-one .card-content .content-history .icon-content {
+  margin-right: 25px;
+}
+.blog-news-card.style-one .card-content .content-title h3 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #23262D;
+}
+.blog-news-card.style-one .card-content .content-description p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  margin: 15px 0px 30px;
+  text-align: left;
+  color: #616670;
+}
+.blog-news-card.style-one .card-content .btn-wrapper {
+  margin-top: 55px;
+}
+.blog-news-card.style-one .card-content:hover {
+  border-bottom: 1px solid #D9A14C;
 }
 
 .header-area {
@@ -2482,6 +2540,12 @@
 }
 .about-us-section .about-us-right {
   margin: 50px auto;
+}
+
+.blog-news-section {
+  padding: 120px 0px;
+  background: #ffffff;
+  margin: 0 auto;
 }
 
 .about-us-section .about-us-right-content .btn-wrapper {
