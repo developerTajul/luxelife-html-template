@@ -12,9 +12,10 @@
   line-height: 32px;
   letter-spacing: 1.2799999714px;
   text-align: center;
-  border: 1px solid transparent;
-  color: #ffffff;
-  background: #D9A14C;
+  border: 1px solid #D9A14C;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
+  color: #D9A14C;
+  background: #ffffff;
   text-decoration: none;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
@@ -23,10 +24,9 @@
   -o-transition: all 0.5s ease-out;
 }
 .theme-btn:hover {
-  border: 1px solid #D9A14C;
-  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
-  color: #D9A14C;
-  background: #ffffff;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background: #D9A14C;
 }
 
 /* Deafult Margin & Padding */
@@ -2047,6 +2047,50 @@
   border-bottom: 1px solid #D9A14C;
 }
 
+.testimonial-card.style-one {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 40px 75px 45px 35px;
+  background: #ffffff;
+}
+.testimonial-card.style-one .testimonial-profile .name {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0px;
+  margin-top: 15px;
+  text-align: left;
+  color: #23262D;
+}
+.testimonial-card.style-one .testimonial-profile .designation p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #616670;
+}
+.testimonial-card.style-one .testimonial-profile .rating i {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #D9A14C;
+}
+.testimonial-card.style-one .testimonial-comment p {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #616670;
+}
+
 .header-area {
   position: fixed;
   width: 100%;
@@ -2540,6 +2584,12 @@
 }
 .about-us-section .about-us-right {
   margin: 50px auto;
+}
+
+.testimonial-section {
+  padding: 120px 0px;
+  background: #E3E3E3;
+  margin: 0 auto;
 }
 
 .blog-news-section {

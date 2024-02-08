@@ -13,17 +13,17 @@ a{
     line-height: 32px;
     letter-spacing: 1.2799999713897705px;
     text-align: center;
-    border: 1px solid transparent;
-    color: $white;
-    background: $primary-color;
+    border: 1px solid $primary-color;
+    box-shadow: $box-shadow;
+    color: $primary-color;
+    background: $white;
     text-decoration: none;
     @include transition;
 
     &:hover{ 
-        border: 1px solid $primary-color;
-        box-shadow: $box-shadow;
-        color: $primary-color;
-        background: $white;
+        border: 1px solid transparent;
+        color: $white;
+        background: $primary-color;
     }
 
 }
