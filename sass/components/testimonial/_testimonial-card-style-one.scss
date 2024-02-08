@@ -1,7 +1,7 @@
 .testimonial-card {
     &.style-one{
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         justify-content: space-between;
         padding: 40px 75px 45px 35px;
         background: $white;

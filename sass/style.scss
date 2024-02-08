@@ -3,6 +3,7 @@
 @import "./base/reset";
 @import "./base/mixins";
 @import "./base/variables"; 
+@import "./base/keyframes"; 
 @import "./base/theme-default";
 @import "./base/default-spacing";
 @import "./base/helpers";
@@ -30,6 +31,9 @@
 @import "./components/blog-news/blog-news-style-two";
 
 @import "./components/testimonial/testimonial-card-style-one";
+
+@import "./components/brand-animation/brand-animation-style-one";
+@import "./components/best-selling/best-selling-style-one";
 // COMPONENTS END
 
 // LAYOUTS START

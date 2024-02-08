@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+@keyframes move-rtl {
+  0% {
+    transform: translateX(50vw);
+    transform: translateX(50vw);
+    -webkit-transform: translateX(50vw);
+    -moz-transform: translateX(50vw);
+    -ms-transform: translateX(50vw);
+    -o-transform: translateX(50vw);
+  }
+  100% {
+    transform: translateX(-50vw);
+    transform: translateX(-50vw);
+    -webkit-transform: translateX(-50vw);
+    -moz-transform: translateX(-50vw);
+    -ms-transform: translateX(-50vw);
+    -o-transform: translateX(-50vw);
+  }
+}
 .theme-btn {
   padding: 30px 70px;
   font-family: "Rajdhani", sans-serif;
@@ -2049,7 +2067,7 @@
 
 .testimonial-card.style-one {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 40px 75px 45px 35px;
   background: #ffffff;
@@ -2091,6 +2109,51 @@
   color: #616670;
 }
 
+.brand-animation {
+  padding: 150px 0px 0px;
+}
+.brand-animation.style-one .text-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  background: #E3E3E3;
+  overflow: hidden;
+}
+.brand-animation.style-one .text-wrapper h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #23262D;
+  text-stroke-color: #D9A14C;
+  white-space: nowrap;
+  padding: 0.6rem;
+  letter-spacing: 1px;
+  animation: move-rtl 32000ms linear infinite;
+  -webkit-animation: move-rtl 32000ms linear infinite;
+}
+.brand-animation.style-one .text-wrapper h1img {
+  margin-left: 20px;
+}
+.brand-animation.style-one .text-wrapper h1.bold {
+  color: #23262D;
+}
+
+.best-selling-card.style-one .card-description p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  margin-top: 15px;
+  margin-bottom: 55px;
+  text-align: left;
+  color: #616670;
+}
 .header-area {
   position: fixed;
   width: 100%;
@@ -2586,6 +2649,12 @@
   margin: 50px auto;
 }
 
+.brand-animation-section {
+  padding: 120px 0px;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
 .testimonial-section {
   padding: 120px 0px;
   background: #E3E3E3;
@@ -2600,6 +2669,17 @@
 
 .about-us-section .about-us-right-content .btn-wrapper {
   margin-top: 55px;
+}
+
+.best-selling-and-brand-animation-section {
+  padding: 120px 0px 80px;
+  background: #E3E3E3;
+}
+.best-selling-and-brand-animation-section .image img {
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  border: 3px dashed #D9A14C;
 }
 
 .pricing-section {
