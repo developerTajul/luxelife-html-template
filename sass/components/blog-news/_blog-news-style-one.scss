@@ -6,6 +6,7 @@
         .card-image{
             img{
                 z-index: 1;
+                @include transition;
             }
         }
 
@@ -57,10 +58,25 @@
             .btn-wrapper{
                 margin-top: 55px;
             }
+        }
 
-            &:hover{
+        &:hover{
+            .card-image{
+                img{
+                    transform: scaleY(1.05);
+                    -webkit-transform: scaleY(1.05);
+                    -moz-transform: scaleY(1.05);
+                    -ms-transform: scaleY(1.05);
+                    -o-transform: scaleY(1.05);
+                }
+            }
+
+            
+
+            .card-content{
                 border-bottom: 1px solid $primary-color;
             }
+
         }
     }
 }
