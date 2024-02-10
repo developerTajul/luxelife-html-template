@@ -27,7 +27,6 @@
   font-family: "Rajdhani", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 32px;
   letter-spacing: 1.2799999714px;
   text-align: center;
   border: 1px solid #D9A14C;
@@ -52,7 +51,6 @@
   font-family: "Rajdhani", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 32px;
   letter-spacing: 1.2799999714px;
   text-align: center;
   border: 1px solid transparent;
@@ -67,6 +65,31 @@
   -o-transition: all 0.5s ease-out;
 }
 .theme-btn-two:hover {
+  border: 1px solid #D9A14C;
+  color: #D9A14C;
+  background: #ffffff;
+}
+
+.theme-btn-three {
+  padding: 18px 30px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1.2799999714px;
+  text-align: center;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background: #D9A14C;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.theme-btn-three:hover {
   border: 1px solid #D9A14C;
   color: #D9A14C;
   background: #ffffff;
@@ -2715,6 +2738,52 @@
 }
 .about-us-section .about-us-right {
   margin: 50px auto;
+}
+
+.subscribe-section .image img {
+  height: 425px;
+}
+.subscribe-section .subscribe-content {
+  padding: 80px 0px;
+  overflow: hidden;
+}
+.subscribe-section .subscribe-content h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #23262D;
+}
+.subscribe-section .subscribe-content p {
+  padding: 0px 113px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #616670;
+}
+.subscribe-section .subscribe-content .subscribe-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 75px;
+}
+.subscribe-section .subscribe-content .subscribe-field input {
+  margin-right: 10px;
+  width: 65%;
+  height: 60px;
+}
+.subscribe-section .subscribe-content .subscribe-field input[type=email] {
+  text-indent: 20px;
+  border: 1px solid #E3E3E3;
+}
+.subscribe-section .subscribe-content .subscribe-field input[type=email]:focus {
+  border: 1px solid #E3E3E3;
+  outline: none;
 }
 
 .best-selling-and-brand-animation-section {
