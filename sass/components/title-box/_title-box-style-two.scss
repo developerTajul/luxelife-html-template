@@ -1,0 +1,29 @@
+.title-box {
+    &.style-two{
+        .title{
+            h4{ 
+                font-family: 'Rajdhani';
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 27px;
+                letter-spacing: 4px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $primary-color;
+            }
+        }
+
+        .sub-title{
+            margin-bottom: 60px;
+            h2{ 
+                font-family: 'Rajdhani',sans-serif;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 60px;
+                letter-spacing: 0px;
+                text-align: center;
+                color: $white;
+            }
+        }
+    }
+}

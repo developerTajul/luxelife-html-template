@@ -1,0 +1,21 @@
+.best-selling-card {
+    &.style-one{  
+        .card-description{
+            p{ 
+                font-family: 'Rubik',sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0px;
+                margin-top: 15px;
+                margin-bottom: 55px;
+                text-align: left;
+                color: $text-paragraph-color;
+            }
+        }
+
+        .btn-wrapper{
+
+        }
+    }
+}
