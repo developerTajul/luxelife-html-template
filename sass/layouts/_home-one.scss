@@ -124,6 +124,46 @@
 // BLOG AND NEWS SECTION
 .blog-news-section{
     padding: 120px 0px;
-    background: $white;
-    margin: 0 auto; 
+    background: $white; 
+
+    .title-box {
+        margin-bottom: 60px;
+    }
+
+    .latest_blog_news_slider{
+        .prevArrow,.nextArrow{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            background: $primary-color;
+            color: $white;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            @include transition;
+            &:hover{
+                background: $white;  
+                color: $primary-color; 
+                border: 1px solid $primary-color;
+
+            }
+        }
+
+        .prevArrow{
+            position: absolute;
+            top: -70px;
+            right: 6%;
+        }
+        .nextArrow{
+            position: absolute;
+            top: -70px;
+            right: 1%;
+        }
+    }
 }

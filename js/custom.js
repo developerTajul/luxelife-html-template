@@ -75,415 +75,7 @@
         }).hide();
 
 
-        /*
-        Skill Progress Bar Js
-        ============================*/
-        $('.skill-progressbar').one('inview', function (event, isInView) {
-            if (isInView) {
-                $('.progress-inner').each(function () {
-                    $(this).find('.progress-content').animate({
-                        width: $(this).attr('data-percentage')
-                    }, 2000);
 
-                    $(this).find('.progress-number-count').animate(
-                        { left: $(this).attr('data-percentage') },
-                        {
-                            duration: 2000,
-                            step: function (now) {
-                                let data = Math.round(now);
-                                $(this).find('.progress-percent').html(data + '%');
-                            }
-                        });
-                });
-
-            }
-        });
-
-        /*
-       Slider
-       ============================*/
-        $(".slider-wrapper").slick({
-            slidesToShow: 1,
-            infinite: true,
-            autoplay: false,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='slider-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        autoplay: true,
-                    },
-                },
-            ],
-        });
-
-        /*
-       Info Card Slider
-       ============================*/
-        $("#info_card_slider_wrapper").slick({
-            slidesToShow: 3,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='info-card-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='info-card-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-            ],
-        });
-
-        /*
-       Team Slider
-       ============================*/
-        $("#team_slider_wrapper").slick({
-            slidesToShow: 3,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: false,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-            ],
-        });
-        $(".project-area-slider").slick({
-            slidesToShow: 4,
-            infinite: true,
-            autoplay: false,
-            draggable: true,
-            arrows: false,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            responsive: [
-                {
-                    breakpoint: 1399,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-                {
-                    breakpoint: 1199,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-            ],
-        });
-
-
-        /*
-       Testimonial Slider
-       ============================*/
-        $("#home3_testimonial").slick({
-            slidesToShow: 2,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 1023,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 1,
-                    },
-                }
-            ],
-        });
-
-
-        /*
-       Testimonial Slider
-       ============================*/
-        $("#testimonial_two").slick({
-            slidesToShow: 2,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 1,
-                    },
-                }
-            ],
-        });
-
-        $('#trigger_testimonial_prev').on('click', function () {
-            $('.testimonial-slider-wrapper .prev-btn').trigger('click');
-        });
-        $('#trigger_testimonial_next').on('click', function () {
-            $('.testimonial-slider-wrapper .next-btn').trigger('click');
-        });
-
-        $("#testimonial_three").slick({
-            slidesToShow: 1,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        autoplay: true,
-                    },
-                },
-            ],
-        });
-
-        /*
-       Related Portfolio Slider
-       ============================*/
-        $("#related_portfolio").slick({
-            slidesToShow: 3,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='portfolio-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='portfolio-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-                {
-                    breakpoint: 460,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-            ],
-        });
-
-
-        /*
-       Post Gallery Slider
-       ============================*/
-        $(".post-gallery").slick({
-            slidesToShow: 1,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 300,
-            prevArrow:
-                "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
-        });
-        /*
-       Client Logo Slider
-       ============================*/
-        $(".client-logo-slider-wrapper").slick({
-            slidesToShow: 5,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: false,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 4,
-                    },
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 460,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-            ],
-        });
-
-        /*
-        Counter Js
-        ============================*/
-        $(".counter").counterUp({
-            delay: 10,
-            time: 500,
-        });
-
-        /*
-       Magnific Popup
-       ============================*/
-        $(".video-play").magnificPopup({
-            disableOn: 700,
-            type: "iframe",
-            mainClass: "mfp-fade",
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false,
-        });
-
-        /*
-        Jquery Wow Js
-        ============================*/
-        new WOW().init();
-
-        /*
-       Jquery Nice Select Js
-       ============================*/
-        $('select.select_option, select.wpcf7-select').niceSelect();
-
-        /*
-       Jquery Tilt Js
-       ============================*/
-        $('.tilt-animate').tilt({
-            maxTilt: 12,
-            perspective: 1500,
-        })
-
-        /*
-        Scroll To Top Js
-        ============================*/
-        $(function () {
-            $("#scrollTop").hide();
-            var position = $(window).scrollTop();
-            var timer;
-            $(window).on('scroll', function () {
-                var scrollTop = $(window).scrollTop();
-                clearTimeout(timer);
-                if (scrollTop > 100) {
-                    if (scrollTop > position) {
-                        $('#scrollTop').fadeOut();
-                    } else {
-                        $('#scrollTop').fadeIn();
-                        timer = window.setTimeout(function () {
-                            $("#scrollTop").fadeOut();
-                        }, 3000);
-                    }
-                    position = scrollTop;
-                } else {
-                    $('#scrollTop').fadeOut();
-                }
-            });
-            $(".scrollup-btn").click(function () {
-                $("html, body").animate({ scrollTop: 0 }, "slow");
-                return false;
-            });
-        });
         /*
         Preeloader
         ============================*/
@@ -491,81 +83,6 @@
             $("#preloader").fadeOut();
             $("#preloader-status").delay(200).fadeOut("slow");
             $("body").delay(200).css({ "overflow-x": "hidden" });
-        });
-
-
-
-        /* Home page testimonial
-        ==================================*/
-        $('.testimonial-wrapper').slick({
-            // dots: true,
-            infinite: true,
-            speed: 500,
-            autoplay: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            prevArrow:
-            "<button type='button' class='testimonial-btn prev'><i class='bi bi-arrow-left'></i></button>",
-            nextArrow:
-            "<button type='button' class='testimonial-btn next'><i class='bi bi-arrow-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        arrows: false,
-                        dots: true,
-                    },
-                },
-            ],
-        });
-
-        /* Team member slider
-        ============================*/
-        $(".team-slider-wrapper").slick({
-            slidesToShow: 3,
-            infinite: true,
-            autoplay: false,
-            draggable: true,
-            arrows: false,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            prevArrow: "",
-            nextArrow: "",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 460,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-            ],
         });
 
 
@@ -593,9 +110,6 @@
             $('.filter-button-group button').removeClass("active");
             $(this).addClass("active");
         });
-
-
-
 
 
         // SERVICE DETAILS JQUERY PLUGIN- masirul
@@ -641,6 +155,47 @@
         // mixitup 
         var containerEl = document.querySelector('.project-gallery-wrapper');
         // var mixer = mixitup(containerEl);
+
+        
+        /*latest blog Slider
+        ============================*/
+        $(".latest_blog_news_slider").slick({
+            slidesToShow: 3,
+            infinite: true,
+            autoplay: true,
+            draggable: true, 
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500, 
+            responsive: [{
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        variableWidth: false,
+                    },
+                },
+            ],
+
+            prevArrow: '<span class="prevArrow"><i class="bi bi-arrow-left"></i></span>',
+            nextArrow: '<span class="nextArrow"><i class="bi bi-arrow-right"></i></span>',
+        });
+
+      
+ 
+        
 
     });
 })(jQuery);
