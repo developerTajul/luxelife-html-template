@@ -1,4 +1,5 @@
 .video-section{
+    padding: 120px 0;
     .video-area{
         position: relative;
         overflow: hidden;
@@ -21,8 +22,8 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 @include lg{
-                    width: 120px;
-                    height: 120px;
+                    width: 125px;
+                    height: 125px;
                 }
                 @include md{
                     width: 85px;
@@ -35,24 +36,36 @@
                 span{
                 background-color: #ffffff;
                 border: 1px solid #D9A14C;
-                padding: 48px 50px;
+                width: 140px;
+                height: 140px;
                 border-radius: 50%;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                text-align: center;
+                line-height: 140px;
+                
                 @include lg{
-                    padding: 35px 38px;
+                    width: 110px;
+                    height: 110px;
+                    line-height: 110px;
                 }
                 @include md{
-                    padding: 26px 28px;
+                    width: 75px;
+                    height: 75px;
+                    line-height: 75px;
                 }
                 @include sm{
-                    padding: 21px 23px;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+
                 }
                     &.icon-Polygon-23{
+                        color: #d9a14c;
                         &::before {
-                            content: "\e902";
+                            content: "\e90b";
                             color: #d9a14c;
                             font-size: 30px;
                             @include md{
