@@ -9,6 +9,7 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 /* Deafult Margin & Padding */
@@ -3505,7 +3506,7 @@ ul {
 footer .footer-bg {
   position: relative;
   z-index: 999;
-  padding: 120px 0;
+  padding-top: 81px;
   background-size: contain;
   background-position: center;
 }
@@ -3520,20 +3521,26 @@ footer .footer-bg::before {
   content: "";
   z-index: -1;
 }
-footer .footer-bg .footer-widget .footer-widget-info .footer-logo {
+footer .footer-bg .footer-wrapper {
+  margin-bottom: 76px;
+}
+footer .footer-bg .footer-wrapper .footer-wrapper-info {
+  margin-right: 51px;
+}
+footer .footer-bg .footer-wrapper .footer-wrapper-info .footer-logo {
   margin-bottom: 28px;
 }
-footer .footer-bg .footer-widget .footer-widget-info .footer-widget-contain p {
+footer .footer-bg .footer-wrapper .footer-wrapper-info .footer-wrapper-contain p {
   color: rgb(255, 255, 255);
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0px;
   text-align: justify;
   margin-bottom: 40px;
 }
-footer .footer-bg .footer-widget .footer-widget-info .social-profile a {
+footer .footer-bg .footer-wrapper .footer-wrapper-info .social-profile a {
   width: 30px;
   height: 30px;
   background: rgba(244, 244, 244, 0.1);
@@ -3542,29 +3549,32 @@ footer .footer-bg .footer-widget .footer-widget-info .social-profile a {
   line-height: 30px;
   margin-right: 10px;
 }
-footer .footer-bg .footer-widget .footer-widget-info .social-profile a span {
+footer .footer-bg .footer-wrapper .footer-wrapper-info .social-profile a span {
   color: #FFFFFF;
 }
-footer .footer-bg .footer-widget .footer-widget-info .social-profile a span.icon-facebook::before {
+footer .footer-bg .footer-wrapper .footer-wrapper-info .social-profile a span.icon-facebook::before {
   content: "\e906";
-  font-size: 16px;
+  font-size: 13px;
 }
-footer .footer-bg .footer-widget .footer-widget-info .social-profile a span.icon-twiter::before {
+footer .footer-bg .footer-wrapper .footer-wrapper-info .social-profile a span.icon-twiter::before {
   content: "\e905";
-  font-size: 16px;
+  font-size: 13px;
 }
-footer .footer-bg .footer-widget .footer-widget-info .social-profile a span.icon-instaragram::before {
+footer .footer-bg .footer-wrapper .footer-wrapper-info .social-profile a span.icon-instaragram::before {
   content: "\e904";
-  font-size: 16px;
+  font-size: 13px;
 }
-footer .footer-bg .footer-widget .footer-widget-info .social-profile a span.icon-pichat::before {
+footer .footer-bg .footer-wrapper .footer-wrapper-info .social-profile a span.icon-pichat::before {
   content: "\e903";
-  font-size: 16px;
+  font-size: 13px;
 }
-footer .footer-bg .footer-widget .footer-widget-info .social-profile a:hover span {
-  color: red;
+footer .footer-bg .footer-wrapper .footer-wrapper-info .social-profile a:hover span {
+  color: #D9A14C;
 }
-footer .footer-bg .footer-widget .footer-widget-contract-info .contract-header h3 {
+footer .footer-bg .footer-wrapper .footer-wrapper-contract-info {
+  margin-right: 51px;
+}
+footer .footer-bg .footer-wrapper .footer-wrapper-contract-info .contract-header h3 {
   color: rgb(255, 255, 255);
   font-family: Rajdhani;
   font-size: 24px;
@@ -3574,10 +3584,10 @@ footer .footer-bg .footer-widget .footer-widget-contract-info .contract-header h
   text-align: left;
   margin-bottom: 28px;
 }
-footer .footer-bg .footer-widget .footer-widget-contract-info .footer-widget-contain p {
+footer .footer-bg .footer-wrapper .footer-wrapper-contract-info .footer-wrapper-contain p {
   color: rgb(255, 255, 255);
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0px;
@@ -3585,49 +3595,49 @@ footer .footer-bg .footer-widget .footer-widget-contract-info .footer-widget-con
   margin-bottom: 40px;
   margin-bottom: 20px;
 }
-footer .footer-bg .footer-widget .footer-widget-contract-info .footer-widget-contact .footer-contact ul li {
+footer .footer-bg .footer-wrapper .footer-wrapper-contract-info .footer-wrapper-contact .footer-contact ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
 }
-footer .footer-bg .footer-widget .footer-widget-contract-info .footer-widget-contact .footer-contact ul li .contract-icon span {
+footer .footer-bg .footer-wrapper .footer-wrapper-contract-info .footer-wrapper-contact .footer-contact ul li .contract-icon span {
   color: rgb(217, 161, 76);
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 900;
   line-height: 16px;
   letter-spacing: 0%;
   text-align: center;
 }
-footer .footer-bg .footer-widget .footer-widget-contract-info .footer-widget-contact .footer-contact ul li .contract-icon span.icon-inbox::before {
+footer .footer-bg .footer-wrapper .footer-wrapper-contract-info .footer-wrapper-contact .footer-contact ul li .contract-icon span.icon-inbox::before {
   content: "\e909";
 }
-footer .footer-bg .footer-widget .footer-widget-contract-info .footer-widget-contact .footer-contact ul li .contract-icon span.icon-location::before {
+footer .footer-bg .footer-wrapper .footer-wrapper-contract-info .footer-wrapper-contact .footer-contact ul li .contract-icon span.icon-location::before {
   content: "\e908";
 }
-footer .footer-bg .footer-widget .footer-widget-contract-info .footer-widget-contact .footer-contact ul li .contract-icon span.icon-calling-::before {
+footer .footer-bg .footer-wrapper .footer-wrapper-contract-info .footer-wrapper-contact .footer-contact ul li .contract-icon span.icon-calling-::before {
   content: "\e907";
 }
-footer .footer-bg .footer-widget .footer-widget-contract-info .footer-widget-contact .footer-contact ul li .contract-text {
+footer .footer-bg .footer-wrapper .footer-wrapper-contract-info .footer-wrapper-contact .footer-contact ul li .contract-text {
   margin-left: 7px;
 }
-footer .footer-bg .footer-widget .footer-widget-contract-info .footer-widget-contact .footer-contact ul li .contract-text a {
+footer .footer-bg .footer-wrapper .footer-wrapper-contract-info .footer-wrapper-contact .footer-contact ul li .contract-text a {
   color: rgb(255, 255, 255);
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   letter-spacing: 0px;
   text-align: left;
 }
-footer .footer-bg .footer-widget .footer-widget-contract-info .footer-widget-contact .footer-contact ul li .contract-text span {
+footer .footer-bg .footer-wrapper .footer-wrapper-contract-info .footer-wrapper-contact .footer-contact ul li .contract-text span {
   color: rgb(255, 255, 255);
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   letter-spacing: 0px;
   text-align: left;
 }
-footer .footer-bg .footer-widget .footer-widget-servicse-info .footer-heading h3 {
+footer .footer-bg .footer-wrapper .footer-wrapper-servicse-info .footer-heading h3 {
   color: rgb(255, 255, 255);
   font-family: Rajdhani;
   font-size: 24px;
@@ -3637,12 +3647,12 @@ footer .footer-bg .footer-widget .footer-widget-servicse-info .footer-heading h3
   text-align: left;
   margin-bottom: 28px;
 }
-footer .footer-bg .footer-widget .footer-widget-servicse-info .footer-widget-servicse .footer-servicse ul li {
+footer .footer-bg .footer-wrapper .footer-wrapper-servicse-info .footer-wrapper-servicse .footer-servicse ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-footer .footer-bg .footer-widget .footer-widget-servicse-info .footer-widget-servicse .footer-servicse ul li .footer-servicse-icon .icon--6:before {
+footer .footer-bg .footer-wrapper .footer-wrapper-servicse-info .footer-wrapper-servicse .footer-servicse ul li .footer-servicse-icon .icon--6:before {
   content: "\e902";
   color: #fff;
   color: rgb(255, 255, 255);
@@ -3652,19 +3662,22 @@ footer .footer-bg .footer-widget .footer-widget-servicse-info .footer-widget-ser
   letter-spacing: 0%;
   text-align: left;
 }
-footer .footer-bg .footer-widget .footer-widget-servicse-info .footer-widget-servicse .footer-servicse ul li .footer-servicse-text {
+footer .footer-bg .footer-wrapper .footer-wrapper-servicse-info .footer-wrapper-servicse .footer-servicse ul li .footer-servicse-text {
   margin-left: 8px;
   margin-bottom: 10px;
 }
-footer .footer-bg .footer-widget .footer-widget-servicse-info .footer-widget-servicse .footer-servicse ul li .footer-servicse-text a {
+footer .footer-bg .footer-wrapper .footer-wrapper-servicse-info .footer-wrapper-servicse .footer-servicse ul li .footer-servicse-text a {
   color: rgb(255, 255, 255);
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 30px;
   text-align: left;
 }
-footer .footer-bg .footer-widget .footer-widget-newslatter-info .newslatter-header h3 {
+footer .footer-bg .footer-wrapper .footer-wrapper-newslatter-info {
+  margin-left: 40px;
+}
+footer .footer-bg .footer-wrapper .footer-wrapper-newslatter-info .newslatter-header h3 {
   color: rgb(255, 255, 255);
   font-family: Rajdhani;
   font-size: 24px;
@@ -3674,17 +3687,18 @@ footer .footer-bg .footer-widget .footer-widget-newslatter-info .newslatter-head
   text-align: left;
   margin-bottom: 28px;
 }
-footer .footer-bg .footer-widget .footer-widget-newslatter-info .footer-widget-contain p {
+footer .footer-bg .footer-wrapper .footer-wrapper-newslatter-info .footer-wrapper-contain p {
   color: rgb(255, 255, 255);
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0px;
   text-align: justify;
   margin-bottom: 40px;
+  margin-right: 55px;
 }
-footer .footer-bg .footer-widget .footer-widget-newslatter-info .footer-widget-newslatter .footer-newslatter form {
+footer .footer-bg .footer-wrapper .footer-wrapper-newslatter-info .footer-wrapper-newslatter .footer-newslatter form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3696,12 +3710,12 @@ footer .footer-bg .footer-widget .footer-widget-newslatter-info .footer-widget-n
   height: 55px;
   width: 65px;
 }
-footer .footer-bg .footer-widget .footer-widget-newslatter-info .footer-widget-newslatter .footer-newslatter form input {
+footer .footer-bg .footer-wrapper .footer-wrapper-newslatter-info .footer-wrapper-newslatter .footer-newslatter form input {
   width: 300px;
   height: 55px;
   color: rgb(255, 255, 255);
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0px;
@@ -3709,16 +3723,41 @@ footer .footer-bg .footer-widget .footer-widget-newslatter-info .footer-widget-n
   padding-left: 20px;
   border: 1px solid #D9A14C;
 }
-footer .footer-bg .footer-widget .footer-widget-newslatter-info .footer-widget-newslatter .footer-newslatter form .subscribe-btn {
+footer .footer-bg .footer-wrapper .footer-wrapper-newslatter-info .footer-wrapper-newslatter .footer-newslatter form .subscribe-btn {
   height: 100%;
   width: 100%;
   padding: 18px 20px;
   background: #D9A14C;
   border: 1px solid #D9A14C;
 }
-footer .footer-bg .footer-widget .footer-widget-newslatter-info .footer-widget-newslatter .footer-newslatter form .subscribe-btn span.icon--7::before {
+footer .footer-bg .footer-wrapper .footer-wrapper-newslatter-info .footer-wrapper-newslatter .footer-newslatter form .subscribe-btn span.icon--7::before {
   content: "\e90a";
   color: #fff;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 900;
+}
+footer .footer-bg .footer-bottom-area {
+  padding: 30px 0;
+  border-top: 1px solid #FFFFFF;
+}
+footer .footer-bg .footer-bottom-area .copyright-text {
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+footer .footer-bg .footer-bottom-area .footer-bottom-menu ul li {
+  margin-left: 30px;
+}
+footer .footer-bg .footer-bottom-area .footer-bottom-menu ul li a {
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */

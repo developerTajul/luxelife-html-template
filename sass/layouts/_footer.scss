@@ -3,7 +3,7 @@ footer{
   .footer-bg{
     position: relative;
     z-index: 999;
-    padding: 120px 0;
+    padding-top: 81px;
     background-size: contain;
     background-position:center ;
     &::before{
@@ -16,12 +16,14 @@ footer{
       content: "";
       z-index: -1;
     }
-    .footer-widget{
-      .footer-widget-info{
+    .footer-wrapper{
+      margin-bottom: 76px;
+      .footer-wrapper-info{
+        margin-right: 51px;
         .footer-logo{
           margin-bottom: 28px;
         }
-        .footer-widget-contain{
+        .footer-wrapper-contain{
           p{
             @include footer-pra;
           }
@@ -40,49 +42,50 @@ footer{
               &.icon-facebook{
                 &::before {
                   content: "\e906";
-                  font-size: 16px;
+                  font-size: 13px;
                 }
               }
               &.icon-twiter{
                 &::before {
                   content: "\e905";
-                  font-size: 16px;
+                  font-size: 13px;
                 }
               }
               &.icon-instaragram{
                 &::before {
                   content: "\e904";
-                  font-size: 16px;
+                  font-size: 13px;
                 }
               }
               &.icon-pichat{
                 &::before {
                   content: "\e903";
-                  font-size: 16px;
+                  font-size: 13px;
                 }
               }
             }
             &:hover{
               span{
-                color: red;
+                color: #D9A14C;
               }
             }
           }
         }
       }
-      .footer-widget-contract-info{
+      .footer-wrapper-contract-info{
+        margin-right: 51px;
         .contract-header{
           h3{
             @include footer-heading;
           }
         }
-        .footer-widget-contain{
+        .footer-wrapper-contain{
           p{
             @include footer-pra;
             margin-bottom: 20px
           }
         }
-        .footer-widget-contact{
+        .footer-wrapper-contact{
           .footer-contact{
             ul{
               li{
@@ -91,7 +94,7 @@ footer{
                 .contract-icon{
                   span{
                     color: rgb(217, 161, 76);
-                    font-size: 16px;
+                    font-size: 13px;
                     font-weight: 900;
                     line-height: 16px;
                     letter-spacing: 0%;
@@ -119,7 +122,7 @@ footer{
                   a{
                     color: rgb(255, 255, 255);
                     font-family: Rubik;
-                    font-size: 16px;
+                    font-size: 13px;
                     font-weight: 400;
                     letter-spacing: 0px;
                     text-align: left;
@@ -127,7 +130,7 @@ footer{
                   span{
                     color: rgb(255, 255, 255);
                     font-family: Rubik;
-                    font-size: 16px;
+                    font-size: 13px;
                     font-weight: 400;
                     letter-spacing: 0px;
                     text-align: left;
@@ -138,13 +141,13 @@ footer{
           }
         }
       }
-      .footer-widget-servicse-info{
+      .footer-wrapper-servicse-info{
         .footer-heading{
           h3{
             @include footer-heading;
           }
         }
-        .footer-widget-servicse{
+        .footer-wrapper-servicse{
           .footer-servicse{
             ul{
               li{
@@ -170,7 +173,7 @@ footer{
                   a{
                     color: rgb(255, 255, 255);
                     font-family: Rubik;
-                    font-size: 16px;
+                    font-size: 13px;
                     font-weight: 400;
                     line-height: 30px;
                     text-align: left;
@@ -181,18 +184,20 @@ footer{
           }
         }
       }
-      .footer-widget-newslatter-info{
+      .footer-wrapper-newslatter-info{
+        margin-left: 40px;
         .newslatter-header{
           h3{
             @include footer-heading;
           }
         }
-        .footer-widget-contain{
+        .footer-wrapper-contain{
           p{
             @include footer-pra;
+            margin-right: 55px;
           }
         }
-        .footer-widget-newslatter{
+        .footer-wrapper-newslatter{
           .footer-newslatter{
             form{
               display: flex;
@@ -205,7 +210,7 @@ footer{
                 height: 55px;
                 color: rgb(255, 255, 255);
                 font-family: Rubik;
-                font-size: 16px;
+                font-size: 13px;
                 font-weight: 400;
                 line-height: 30px;
                 letter-spacing: 0px;
@@ -224,12 +229,41 @@ footer{
                     &::before {
                       content: "\e90a";
                       color: #fff;
-                      font-size: 16px;
+                      font-size: 13px;
                       font-weight: 900;
                     }
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom-area{
+      padding: 30px 0;
+      border-top: 1px solid #FFFFFF;
+      .copyright-text{
+        color: rgb(255, 255, 255);
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+      .footer-bottom-menu{
+        ul{
+          li{
+            margin-left: 30px;
+            a{
+              color: rgb(255, 255, 255);
+              font-family: Rubik;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 30px;
+              letter-spacing: 0px;
+              text-align: left;
             }
           }
         }
