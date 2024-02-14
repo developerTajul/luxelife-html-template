@@ -1,0 +1,64 @@
+.testimonial-card {
+    &.style-one{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 40px 75px 45px 35px;
+        background: $white;
+        .testimonial-profile{ 
+            .profile-image{
+                img{
+
+                }
+            }
+
+            .name{ 
+                font-family: 'Rajdhani',sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 30px;
+                letter-spacing: 0px;
+                margin-top: 15px;
+                text-align: left; 
+                color: $text-title-color; 
+            }
+
+            .designation{
+                p{ 
+                    font-family: 'Rubik',sans-serif;
+                    font-size: 16px;
+                    font-weight: 400; 
+                    letter-spacing: 0px;
+                    margin-bottom: 5px;
+                    text-align: left;
+                    color: $text-paragraph-color;
+
+                }
+            }
+
+            .rating{
+                i{ 
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 14px;
+                    letter-spacing: 0em;
+                    text-align: left; 
+                   color: $primary-color;
+                }
+            }
+        }
+
+        .testimonial-comment{
+            p{
+                font-family: 'Rubik',sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 40px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: $text-paragraph-color;
+                
+            }
+        }
+    }
+}

@@ -12,6 +12,126 @@ ul {
   margin-bottom: 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@-webkit-keyframes move-rtl {
+  0% {
+    transform: translateX(50vw);
+    transform: translateX(50vw);
+    -webkit-transform: translateX(50vw);
+    -moz-transform: translateX(50vw);
+    -ms-transform: translateX(50vw);
+    -o-transform: translateX(50vw);
+  }
+  100% {
+    transform: translateX(-50vw);
+    transform: translateX(-50vw);
+    -webkit-transform: translateX(-50vw);
+    -moz-transform: translateX(-50vw);
+    -ms-transform: translateX(-50vw);
+    -o-transform: translateX(-50vw);
+  }
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(50vw);
+    transform: translateX(50vw);
+    -webkit-transform: translateX(50vw);
+    -moz-transform: translateX(50vw);
+    -ms-transform: translateX(50vw);
+    -o-transform: translateX(50vw);
+  }
+  100% {
+    transform: translateX(-50vw);
+    transform: translateX(-50vw);
+    -webkit-transform: translateX(-50vw);
+    -moz-transform: translateX(-50vw);
+    -ms-transform: translateX(-50vw);
+    -o-transform: translateX(-50vw);
+  }
+}
+.theme-btn {
+  padding: 30px 70px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.2799999714px;
+  text-align: center;
+  border: 1px solid #D9A14C;
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
+          box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
+  color: #D9A14C;
+  background: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.theme-btn:hover {
+  border: 1px solid transparent;
+  color: #ffffff;
+  background: #D9A14C;
+}
+
+.theme-btn-two {
+  padding: 30px 70px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.2799999714px;
+  text-align: center;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background: #D9A14C;
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
+          box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.theme-btn-two:hover {
+  border: 1px solid #D9A14C;
+  color: #D9A14C;
+  background: #ffffff;
+}
+
+.theme-btn-three {
+  padding: 18px 30px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1.2799999714px;
+  text-align: center;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background: #D9A14C;
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
+          box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.theme-btn-three:hover {
+  border: 1px solid #D9A14C;
+  color: #D9A14C;
+  background: #ffffff;
+}
+
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
 .mt-5 {
@@ -1946,6 +2066,34 @@ ul {
   color: #616670;
 }
 
+.icon-content.style-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.icon-content.style-two .icon {
+  margin-right: 15px;
+}
+.icon-content.style-two .icon i {
+  font-size: 20px;
+  color: #D9A14C;
+}
+.icon-content.style-two .content p {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #616670;
+}
+
 .title-box.style-one .title h4 {
   font-family: "Rajdhani";
   font-size: 18px;
@@ -1953,6 +2101,7 @@ ul {
   line-height: 27px;
   letter-spacing: 4px;
   text-align: left;
+  text-transform: uppercase;
   color: #D9A14C;
 }
 .title-box.style-one .sub-title h2 {
@@ -1963,6 +2112,29 @@ ul {
   letter-spacing: 0px;
   text-align: left;
   color: #23262D;
+}
+
+.title-box.style-two .title h4 {
+  font-family: "Rajdhani";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #D9A14C;
+}
+.title-box.style-two .sub-title {
+  margin-bottom: 60px;
+}
+.title-box.style-two .sub-title h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .pricing-card.style-one {
@@ -2975,6 +3147,289 @@ ul {
   height: 100%;
 }
 
+.comment-form.style-one .comment-form-title h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 15px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #23262D;
+}
+.comment-form.style-one .comment-form-text p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #616670;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=text], .comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=email] {
+  width: 100%;
+  padding: 30px 0px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=text]::-webkit-input-placeholder, .comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=email]::-webkit-input-placeholder {
+  text-indent: 15px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=text]::-moz-placeholder, .comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=email]::-moz-placeholder {
+  text-indent: 15px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=text]:-ms-input-placeholder, .comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=email]:-ms-input-placeholder {
+  text-indent: 15px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=text]::-ms-input-placeholder, .comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=email]::-ms-input-placeholder {
+  text-indent: 15px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=text]::placeholder, .comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=email]::placeholder {
+  text-indent: 15px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=text]:focus, .comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group input[type=email]:focus {
+  border: 1px solid #D9A14C !important;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group textarea {
+  width: 100%;
+  padding: 98px 0px;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  margin-bottom: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #E3E3E3;
+  background: #ffffff;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group textarea:focus {
+  border-color: transparent;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group textarea::-webkit-input-placeholder {
+  text-indent: 15px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group textarea::-moz-placeholder {
+  text-indent: 15px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group textarea:-ms-input-placeholder {
+  text-indent: 15px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group textarea::-ms-input-placeholder {
+  text-indent: 15px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group textarea::placeholder {
+  text-indent: 15px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group .comment-btn {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.2799999714px;
+  padding: 30px 60px;
+  background: #D9A14C;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.comment-form.style-one .comment-form-input-fields .subscribe-form form .form-group .comment-btn i {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0em;
+  margin-left: 5px;
+  color: #ffffff;
+}
+
+.blog-news-card.style-one {
+  margin-top: 60px;
+  position: relative;
+  height: 700px;
+}
+.blog-news-card.style-one .card-image img {
+  z-index: 1;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.blog-news-card.style-one .card-content {
+  position: absolute;
+  width: 90%;
+  bottom: 15%;
+  padding: 15px 25px 70px;
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
+          box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.0509803922);
+  border-bottom: 1px solid transparent;
+  background: #ffffff;
+  z-index: 2;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.blog-news-card.style-one .card-content .content-history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.blog-news-card.style-one .card-content .content-history .icon-content {
+  margin-right: 25px;
+}
+.blog-news-card.style-one .card-content .content-title h3 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #23262D;
+}
+.blog-news-card.style-one .card-content .content-description p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  margin: 15px 0px 30px;
+  text-align: left;
+  color: #616670;
+}
+.blog-news-card.style-one .card-content .btn-wrapper {
+  margin-top: 55px;
+}
+.blog-news-card.style-one:hover .card-image img {
+  transform: scaleY(1.05);
+  -webkit-transform: scaleY(1.05);
+  -moz-transform: scaleY(1.05);
+  -ms-transform: scaleY(1.05);
+  -o-transform: scaleY(1.05);
+}
+.blog-news-card.style-one:hover .card-content {
+  border-bottom: 1px solid #D9A14C;
+}
+
+.testimonial-card.style-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 75px 45px 35px;
+  background: #ffffff;
+}
+.testimonial-card.style-one .testimonial-profile .name {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0px;
+  margin-top: 15px;
+  text-align: left;
+  color: #23262D;
+}
+.testimonial-card.style-one .testimonial-profile .designation p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #616670;
+}
+.testimonial-card.style-one .testimonial-profile .rating i {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #D9A14C;
+}
+.testimonial-card.style-one .testimonial-comment p {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #616670;
+}
+
+.brand-animation {
+  padding: 150px 0px 0px;
+}
+.brand-animation.style-one .text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #E3E3E3;
+  overflow: hidden;
+}
+.brand-animation.style-one .text-wrapper h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #23262D;
+  text-stroke-color: #D9A14C;
+  white-space: nowrap;
+  padding: 0.6rem;
+  letter-spacing: 1px;
+  animation: move-rtl 32000ms linear infinite;
+  -webkit-animation: move-rtl 32000ms linear infinite;
+}
+.brand-animation.style-one .text-wrapper h1img {
+  margin-left: 20px;
+}
+.brand-animation.style-one .text-wrapper h1.bold {
+  color: #23262D;
+}
+
+.best-selling-card.style-one .card-description p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  margin-top: 15px;
+  margin-bottom: 55px;
+  text-align: left;
+  color: #616670;
+}
+.cta.style-one {
+  position: relative;
+  z-index: 1;
+}
+.cta.style-one .btn-wrapper {
+  text-align: center;
+}
+
 .header-area {
   position: fixed;
   width: 100%;
@@ -3393,7 +3848,7 @@ ul {
   line-height: 120%;
   padding: 10px 20px;
   color: #23262D;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #E3E3E3;
   margin-left: 0;
   font-size: 16px;
 }
@@ -3535,9 +3990,109 @@ ul {
   margin: 50px auto;
 }
 
+.subscribe-section .image img {
+  height: 425px;
+}
+.subscribe-section .subscribe-content {
+  padding: 80px 0px;
+  overflow: hidden;
+}
+.subscribe-section .subscribe-content h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #23262D;
+}
+.subscribe-section .subscribe-content p {
+  padding: 0px 113px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #616670;
+}
+.subscribe-section .subscribe-content .subscribe-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 75px;
+}
+.subscribe-section .subscribe-content .subscribe-field input {
+  margin-right: 10px;
+  width: 65%;
+  height: 60px;
+}
+.subscribe-section .subscribe-content .subscribe-field input[type=email] {
+  text-indent: 20px;
+  border: 1px solid #E3E3E3;
+}
+.subscribe-section .subscribe-content .subscribe-field input[type=email]:focus {
+  border: 1px solid #E3E3E3;
+  outline: none;
+}
+
+.best-selling-and-brand-animation-section {
+  padding: 120px 0px 80px;
+  background: #E3E3E3;
+}
+.best-selling-and-brand-animation-section .image img {
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  border: 3px dashed #D9A14C;
+}
+
+.cta-section {
+  position: relative;
+  padding: 120px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cta-section .cta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 38, 45, 0.8);
+}
+
+.testimonial-section {
+  padding: 120px 0px;
+  background: #E3E3E3;
+  margin: 0 auto;
+}
+
+.blog-news-section {
+  padding: 120px 0px;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+.about-us-section .about-us-right-content .btn-wrapper {
+  margin-top: 55px;
+}
+
 .pricing-section {
   padding: 120px 0px;
   background: #ffffff;
+}
+
+.comment-form-section {
+  padding: 120px 0px;
+  background: #E3E3E3;
 }
 
 footer .footer-bg {

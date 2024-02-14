@@ -1,0 +1,10 @@
+.cta {
+    &.style-one{
+        position: relative;
+        z-index: 1;
+
+        .btn-wrapper{
+            text-align: center;
+        }
+    }
+}
