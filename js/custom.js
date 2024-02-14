@@ -585,11 +585,11 @@
             $grid.isotope('layout');
         });
         // filter items on button click
-        $('.filter-button-group').on('click', 'button', function () {
+        $('.filter-button-group').on('click', '.gallery-info', function () {
             var filterValue = $(this).attr('data-filter');
             $grid.isotope({ filter: filterValue });
         });
-        $(".filter-button-group").on("click", 'button', function () {
+        $(".filter-button-group").on("click", '.gallery-info', function () {
             $('.filter-button-group button').removeClass("active");
             $(this).addClass("active");
         });
