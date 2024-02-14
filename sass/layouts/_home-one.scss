@@ -50,15 +50,16 @@
           top: 52%;
           right: 3%;
           transform: translateY(-52%);
-          z-index: 2;
-          flex-direction: column;
-          margin-bottom: 0;
-          @includermaxwd(1199):;
           -webkit-transform: translateY(-52%);
           -moz-transform: translateY(-52%);
           -ms-transform: translateY(-52%);
           -o-transform: translateY(-52%);
-{
+          z-index: 2;
+          flex-direction: column;
+          margin-bottom: 0;
+
+          @include rmaxwd(1199)
+        {
             position: relative;
             flex-direction: row;
             align-items: center;
