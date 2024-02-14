@@ -1,0 +1,129 @@
+.video-section{
+    padding: 120px 0;
+    .video-area{
+        position: relative;
+        overflow: hidden;
+        .image-section{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .play-btn{
+            
+            a{
+                background-color: #ffffff;
+                border-radius: 50%;
+                width: 155px;
+                height: 155px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @include lg{
+                    width: 125px;
+                    height: 125px;
+                }
+                @include md{
+                    width: 85px;
+                    height: 85px;
+                }
+                @include sm{
+                    width: 70px;
+                    height: 70px;
+                }
+                span{
+                background-color: #ffffff;
+                border: 1px solid #D9A14C;
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                line-height: 140px;
+                
+                @include lg{
+                    width: 110px;
+                    height: 110px;
+                    line-height: 110px;
+                }
+                @include md{
+                    width: 75px;
+                    height: 75px;
+                    line-height: 75px;
+                }
+                @include sm{
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+
+                }
+                    &.icon-Polygon-23{
+                        color: #d9a14c;
+                        &::before {
+                            content: "\e90b";
+                            color: #d9a14c;
+                            font-size: 30px;
+                            @include md{
+                                font-size: 25px;
+                            }
+                            @include md{
+                                font-size: 20px;
+                            }
+                            @include sm{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 150%;
+                    height: 150%;
+                    animation-delay: 0s;
+                    animation: pulsate1 2s;
+                    animation-direction: forwards;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: steps;
+                    opacity: 1;
+                    border-radius: 50%;
+                    border: 5px solid rgba(255, 255, 255, .75);
+                    top: -25%;
+                    left: -25%;
+                    background: rgba(198, 16, 0, 0);
+                }
+                @-webkit-keyframes pulsate1 {
+                    0% {
+                        transform: scale(0.6);
+                        opacity: 1;
+                        box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+                    }
+                    100% {
+                        transform: scale(1);
+                        opacity: 0;
+                        box-shadow: none;
+                    }
+                }
+                @keyframes pulsate1 {
+                    0% {
+                        transform: scale(0.6);
+                        opacity: 1;
+                        box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+                    }
+                    100% {
+    
+                        transform: scale(1);
+                        opacity: 0;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}

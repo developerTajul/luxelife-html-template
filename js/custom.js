@@ -87,6 +87,74 @@
         
  
         
+        
+        var $grid = $('.isotope-grid').isotope({
+            itemSelector: '.isotope-item',
+            layoutMode: 'fitRows',
+            masonry: {
+                columnWidth: '.isotope-item'
+            }
+        });
+        $grid.imagesLoaded().progress(function () {
+            $grid.isotope('layout');
+        });
+        // filter items on button click
+        $('.filter-button-group').on('click', '.gallery-info', function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+        $(".filter-button-group").on("click", '.gallery-info', function () {
+            $('.filter-button-group button').removeClass("active");
+            $(this).addClass("active");
+        });
+
+
+
+
+
+        // SERVICE DETAILS JQUERY PLUGIN- masirul
+        // faq area start
+
+        const accordionItemHeaders = document.querySelectorAll(
+            ".accordion-item-header"
+        );
+
+        accordionItemHeaders.forEach((accordionItemHeader) => {
+            accordionItemHeader.addEventListener("click", (event) => {
+                // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+
+                const currentlyActiveAccordionItemHeader = document.querySelector(
+                    ".accordion-item-header.active"
+                );
+                if (
+                    currentlyActiveAccordionItemHeader &&
+                    currentlyActiveAccordionItemHeader !== accordionItemHeader
+                ) {
+                    currentlyActiveAccordionItemHeader.classList.toggle("active");
+                    currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+                }
+                accordionItemHeader.classList.toggle("active");
+                const accordionItemBody = accordionItemHeader.nextElementSibling;
+                if (accordionItemHeader.classList.contains("active")) {
+                    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                } else {
+                    accordionItemBody.style.maxHeight = 0;
+                }
+            });
+        });
+
+        // faq area end
+
+        /* Home page brand logo slider testimonial
+     ===========================================*/
+        // let copy = document.querySelector(".logo-slide").cloneNode(true);
+        // document.querySelector(".slide-one").appendChild(copy);
+        // let copytwo = document.querySelector(".logo-slide").cloneNode(true);
+        // document.querySelector(".slide-two").appendChild(copytwo);
+
+        // mixitup 
+        var containerEl = document.querySelector('.project-gallery-wrapper');
+        // var mixer = mixitup(containerEl);
 
     });
 })(jQuery);

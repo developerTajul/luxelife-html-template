@@ -122,7 +122,31 @@
          -o-#{$property}: #{$value};
             #{$property}: #{$value};
   }
-  
+
+// footer-widget-contain
+  @mixin footer-pra{
+    color: rgb(255, 255, 255);
+    font-family: Rubik;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+
+  // footer-widget-contract-heading
+  @mixin footer-heading{
+      color: rgb(255, 255, 255);
+      font-family: Rajdhani;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-bottom: 28px;
+  }
+
   // Small devices
   @mixin xs {
     @media only screen and (min-width: 0px) and (max-width:350px){

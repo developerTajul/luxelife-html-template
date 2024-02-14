@@ -12,10 +12,11 @@
 // BASE END
 
 // COMPONENTS START
+@import "./components/section-heading/section-heading-1";
+@import "./components/section-heading/section-heading-2";
+
 @import "./components/about/about-us-style-one";
 @import "./components/about/about-us-style-two";
-
-@import "./components/services/services-style-one";
 
 @import "./components/icon-content/icon-content-style-one";
 @import "./components/icon-content/icon-content-style-two";
@@ -24,6 +25,16 @@
 @import "./components/title-box/title-box-style-two";
 
 @import "./components/pricing-card/pricing-card-style-one";
+
+@import "./components/work-process/work-process-stye-1";
+@import "./components/work-process/work-process-stye-2";
+
+@import "./components/latest-services/services-style-1";
+@import "./components/latest-services/services-style-2";
+
+@import "./components/video/video-style-1";
+
+@import "./components/gallery";
 
 @import "./components/comment-form/comment-form-style-one";
 
