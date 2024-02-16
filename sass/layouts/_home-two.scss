@@ -76,7 +76,28 @@
 //     }
 // }
 
+//BRAND ANIMATION 
 
+
+
+.brand-slider-section{
+    padding: 120px 0px;
+    background: $gray-200;
+    .brand_slider_wrapper{ 
+        cursor: pointer;
+        .slider_items{
+            width: 20%;
+        }
+        button{
+            display: none!important;
+        }
+    
+        // Slick Dots
+        .slick-dots {
+          display: none;
+        }
+    } 
+}
 // LATEST BLOG AND NEWS
 .blog-news-section{
  background: $gray-200;

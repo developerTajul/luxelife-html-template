@@ -86,6 +86,37 @@
         });
         
  
+        // BRAND SLIDER STYLE TWO
+        $(".brand_slider_wrapper").slick({
+            slidesToShow: 5,
+            infinite: true,
+            autoplay: true,
+            draggable: true, 
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 500, 
+            responsive: [{
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 4,
+                    },
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        variableWidth: false,
+                    },
+                },
+            ],
+        });
         
 
         var $grid = $('.isotope-grid').isotope({
