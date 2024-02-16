@@ -9,12 +9,19 @@
                 letter-spacing: 4px;
                 text-align: center;
                 text-transform: uppercase;
-                color: $primary-color;
+                color: $primary-color;           
+                
+                @include md{
+                    font-size: 16px;
+                }
+                @include sm{
+                    font-size: 14px;
+                }
+
             }
         }
 
         .sub-title{
-            margin-bottom: 60px;
             h2{ 
                 font-family: 'Rajdhani',sans-serif;
                 font-size: 48px;
@@ -22,7 +29,7 @@
                 line-height: 60px;
                 letter-spacing: 0px;
                 text-align: center;
-                color: $white;
+                color: $text-title-color;
             }
         }
     }
