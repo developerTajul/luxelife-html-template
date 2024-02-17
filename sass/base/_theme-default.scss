@@ -1,9 +1,15 @@
 
-a{ 
+.background-gray{
+    background: $gray-200;
 }
 
+.background-white{
+    background: $white;
+}
 
-
+.background-black{
+    background: $black;
+}
 //ALL BUTTONS
 .theme-btn{ 
     padding: 25px;
@@ -47,8 +53,7 @@ a{
         background: $white;
     }
 
-}
-
+} 
 
 .theme-btn-three{ 
     padding: 18px 30px;
@@ -73,3 +78,4 @@ a{
     }
 
 }
+

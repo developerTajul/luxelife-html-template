@@ -118,6 +118,11 @@
             ],
         });
         
+        // COUNTER JS 
+        $(".counter").counterUp({
+            delay: 10,
+            time: 1000,
+        });
 
         var $grid = $('.isotope-grid').isotope({
             itemSelector: '.isotope-item',
