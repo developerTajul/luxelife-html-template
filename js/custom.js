@@ -85,7 +85,36 @@
             nextArrow: '<span class="nextArrow"><i class="bi bi-arrow-right"></i></span>',
         });
         
- 
+
+        // HOME TWO TESTIMONIAL SLIDER
+        $("#testimonial_style_four").slick({
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: false,
+            slidesToScroll: 1,
+            loop: true,
+            dots: true,
+            speed: 1500,
+            variableWidth: true,
+            centerMode: true,
+            rtl: false,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+
         // BRAND SLIDER STYLE TWO
         $(".brand_slider_wrapper").slick({
             slidesToShow: 5,
@@ -94,7 +123,8 @@
             draggable: true, 
             slidesToScroll: 1,
             loop: true,
-            dots: false,
+            dots: false, 
+            arrows: false,
             speed: 500, 
             responsive: [{
                     breakpoint: 1400,
