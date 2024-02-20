@@ -1,76 +1,200 @@
- 
-// BASE START
-@import "./base/reset";
-@import "./base/mixins";
-@import "./base/variables"; 
-@import "./base/keyframes"; 
-@import "./base/theme-default";
-@import "./base/default-spacing";
-@import "./base/helpers";
-@import "./base/typography";
-@import "./base/colors"; 
-// BASE END
+/**
+ * Stylesheet:  style.css
+ * Theme:       Luxelife - Architecture & Interior Design HTML5 Template
+ * Version:     1.0
+ * Author:     	MonPakhi
+ * 
+ */
+/* Table of contents
+=========================
+1.Preloader
+2.Scrollup
+3.Nav Menu
+4.Slider Section
+5.Info Card
+6.Icon Card
+7.About Image Card
+8.About Info Card
+9.Counter Card
+10.Process Step Card
+11.Testimonial Card
+12.Accordion Card
+13.Client Logo Card
+14.Post Card
+15.Skill Progress Card
+16.Price Card
+17.Call To Action Card
+18.Title Card
+19.Breadcrumb
+20.Pagination's
+21.Project Details Page
+22.Sidebar
+23.Comment List
+24.Comment Form
+25.Team Member
+26.Portfolio
+27.About Page
+28.Contact Page
+29.Service Page
+30.Team Page
+Footer
 
-// COMPONENTS START
-@import "./components/section-heading/section-heading-1";
-@import "./components/section-heading/section-heading-2";
 
-@import "./components/about/about-us-style-one";
-@import "./components/about/about-us-style-two";
+===========================*/
+/* Theme Default CSS */
+@import "base/variables";
+@import "base/mixin";
+@import "base/theme-default";
+@import "base/default-spacing";
+@import "base/unittest";
+@import "base/keyframes";
 
-@import "./components/icon-content/icon-content-style-one";
-@import "./components/icon-content/icon-content-style-two";
+// 1.Preloader
+@import "components/preeloader";
 
-@import "./components/title-box/title-box-style-one";
-@import "./components/title-box/title-box-style-two";
+// 2.Scrollup
+@import "base/scrollup";
 
-@import "./components/pricing-card/pricing-card-style-one";
+// 3.Nav Menu
+@import "base/header";
+@import "base/header-one";
+@import "base/header-two"; 
+@import "base/header-three"; 
+@import "components/meanmenu";
+@import "base/menu-sidebar";
+@import "base/title-section";
 
-@import "./components/work-process/work-process-stye-1";
-@import "./components/work-process/work-process-stye-2";
 
-@import "./components/latest-services/services-style-1";
-@import "./components/latest-services/services-style-2";
+// 4.Slider Section
+@import "components/slider/slider-style-one";
+@import "components/slider/slider-style-two"; 
+@import "components/slider/slider-style-four";  
 
-@import "./components/video/video-style-1";
+// 5.Info Card 
+@import "components/info-card/_info-card";
+@import "components/info-card/info-card-two";
+@import "components/info-card/info-card-three";
+@import "components/info-card/info-card-five";
 
-@import "./components/gallery";
+// 6.Icon Card
+@import "components/icon-card/icon-card";
+@import "components/icon-card/icon-card-two"; 
+@import "components/icon-card/icon-card-four"; 
 
-@import "./components/comment-form/comment-form-style-one";
+// 7.About Image Card
+@import "components/about-image-card/about-image-card-two";
+@import "components/about-image-card/about-image-card-one";
+@import "components/about-image-card/about-image-card-four";
+@import "components/about-image-card/about-image-card-three";
+@import "components/about-image-card/about-image-card-five";
 
-@import "./components/blog-news/blog-news-style-one";
-@import "./components/blog-news/blog-news-style-two";
+// Timeline Card 
 
-@import "./components/testimonial/testimonial-card-style-one";
+// 8.About Info Card
+@import "components/about-info-card/about-info-card";
+@import "components/about-info-card/about-info-card-two";  
 
-@import "./components/brand-animation/brand-animation-style-one";
-@import "./components/brand-animation/brand-animation-style-two";
 
-@import "./components/best-selling/best-selling-style-one";
+// 9.Counter Card
+@import "components/counter/counter-card"; 
+@import "components/counter/counter-card-three"; 
 
-@import "./components/cta/cta-style-one";
+// 10.Process Step Card 
 
-@import "./components/post-card/post-card-one";
+// 10.Brand Marquee
+@import "components/brand-marquee/brand-marquee";
 
-@import "./components/intro/intro";
-@import "./components/intro/intro-style-one";
 
-@import "./components/counter-card/counter-card-style-three";
-@import "./components/counter/counter-up-style-three";
+// 11.Testimonial Card
+@import "components/testimonial-card/testimonial-card";
+@import "components/testimonial-card/testimonial-card-two"; 
+@import "components/testimonial-card/testimonial-card-four";  
+@import "components/testimonial-card/testimonial-slider-card";
 
-@import "./components/pricing-card/pricing-style-one";
+// 12.Accordion Card
+@import "components/accordion/accordion";  
 
-@import "./components/testimonial/testimonial-card-four";
-@import "./components/testimonial/testimonial-slider-card";
+// 13.Client Logo Card
+@import "components/client-logo/client-logo";
 
-@import "./components/client-logo/client-logo";
+// 14.Post Card
+@import "components/post-card/post-card";
+@import "components/post-card/post-card-one";
+@import "components/post-card/post-card-two"; 
+@import "components/post-card/post-card-four";  
+@import "components/post-card/post-details";
 
-@import "./components/skill-progress";
-// COMPONENTS END
+// 15.Skill Progress Card
+@import "components/skill-progress";
 
-// LAYOUTS START
-@import "./layouts/header";
-@import "./layouts/pages";
-@import "./layouts/pricing-page";
-@import "./layouts/footer";
-// LAYOUTS END
+// 16.Price Card
+@import "components/price-card";
+
+// 17.Call To Action Card
+@import "components/call-to-action-card";
+
+// 18.Title Card
+@import "base/title-section";
+
+// 19.Breadcrumb
+@import "components/breadcrumb/breadcrumb";
+
+// 20.Pagination's
+@import "components/paginations";
+@import "components/nav-tabs";
+
+// 21.Project Details Page
+@import "layouts/project-details";
+@import "components/list-item";
+
+// 22.Sidebar
+@import "base/sidebar";
+@import "base/sidebar-two";
+
+// 23.Comment List
+@import "components/comment-list";
+
+// 24.Comment Form
+@import "components/comment-form";
+
+// 25.Team Member
+@import "components/team/team-member";
+@import "components/team/team-slider-controls";
+
+// 26.Portfolio
+@import "components/portfolio/portfolio"; 
+//@import "components/portfolio/portfolio-slider-controls";
+
+// Image Card
+@import "components/image-card/image-card";
+
+// Video Popup Modal Card
+@import "components/video-popup-card/video-popup-card";  
+
+
+//Portfolio Slider
+@import "components/project-card/project-card";
+@import "components/project-card/project-card-two"; 
+
+
+// Masonry Portfolio Gallery
+@import "components/masonary-portfolio-gallery/masonary-portfolio-gallery";
+
+// layouts
+@import "layouts/pages";
+
+// 27.About Page
+
+// 28.Contact Page
+@import "layouts/contact-page";
+
+// 29.Service Page
+@import "layouts/service-page";
+
+// 30.Team Page
+@import "layouts/team-member";
+
+// Footer   
+@import "base/footer-one";
+@import "base/footer-two"; 
+@import "base/footer-three";

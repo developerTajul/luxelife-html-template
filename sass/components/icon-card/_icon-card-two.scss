@@ -1,0 +1,38 @@
+
+.icon-card {
+   &.style-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    .icon-card-inner{
+        &:hover{
+            .image{
+                img{
+                    transform: rotateY(360deg);
+                    @include transition;
+                }
+            }
+        }
+    }
+    .icon-card-inner {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        position: relative;
+    }
+    .content{
+        @include md{
+            gap: 0;
+        }
+    }
+    .image {
+        width: 65px;
+        height: 65px;
+        flex-shrink: 0;
+        img{
+            @include transition;
+        }
+    }   
+   }
+}

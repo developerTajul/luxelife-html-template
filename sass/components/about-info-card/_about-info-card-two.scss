@@ -1,0 +1,25 @@
+.about-info-card { 
+  &.style-three {
+    .about-info-content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      @include lg{
+        gap: 0;
+      }
+      .section-title {
+        gap: 0;
+
+        .short-title {
+          margin-bottom: 10px;
+        }
+        .title {
+          margin-bottom: 20px;
+        }
+        .desc {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

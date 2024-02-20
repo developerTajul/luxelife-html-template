@@ -1,15 +1,153 @@
-// ABOUT US SECTION
-.about-us-section{
-    .about-us-right-content{
-        .btn-wrapper{
-            margin-top: 55px;
+.feature-section {
+    &.style-two {
+        @include sm {
+            padding: 80px 0;
+        }
+        @include md {
+            padding: 100px 0;
         }
     }
-} 
+}
+.about-us-section {
+    &.style-two {
+        position: relative;
+        padding-bottom: 57px;
+        z-index: 3;
 
-// OUR TEAM MEMBER
-.our-team-area{
-    &.style-1{
+        @include md {
+            padding-bottom: 0;
+        }
+        @include sm {
+            padding-bottom: 0;
+        }
+
+        .section-title{
+            .title{
+                br{
+                    @include xl{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-bg-frame {
+  position: relative;
+  z-index: 3;
+
+    img {
+        position: absolute;
+        right: -8px;
+        top: -442px;
+        flex-shrink: 0;
+        z-index: -1;
+        opacity: 0.1;
+
+        @include sm {
+            right: 0;
+        }
+        @include md {
+            right: 0;
+        }
+        @include lg {
+            right: 0;
+        }
+        @include xl {
+            right: 0;
+        }
+        
+    }
+}
+
+.latest-service-section {
+    position: relative;
+    z-index: 2;
+
+    @include md {
+        padding: 100px 0;
+    }
+    @include sm {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+}
+
+
+// Project section
+.project-title-section{
+    &.style-two {
+        position: relative;
+        z-index: 2;
+        padding-bottom: 260px;
+        @include md {
+            padding-top: 100px;
+        }
+        @include sm {
+            padding-top: 80px;
+        }
+
+        .section-title {
+            margin-bottom: 40px;
+            @include sm{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .portfolio-slider-disable{
+        position: relative;
+        z-index: 10;
+    }
+}
+.project-slider-section {
+    position: relative;
+    margin-top: -260px;
+
+    .project-card-slider {
+        z-index: 2;
+
+        button {
+            @include sm {
+                width: 30px;
+            }
+        }
+    }
+}
+
+// section background frame style
+.section-bg-frame {
+    &.style-two {
+        z-index: 1;
+        img {
+            top: 160px;
+            left: 17px;
+            flex-shrink: 0;
+            opacity: 0.2;
+            z-index: -1;
+
+            @include sm {
+                left: 0;
+            }
+            @include md {
+                left: 0;
+            }
+            @include lg {
+                left: 0;
+            }
+            @include xl {
+                left: 0;
+            }
+        }
+    }
+}
+
+// Our Team Member
+.our-team-section{
+    &.style-one{
         position: relative;
         padding: 120px 0;
 
@@ -29,7 +167,7 @@
             }
         }
     
-        .team-member-gallery-area{
+        .team-member-gallery-section{
             position: relative;
             z-index: 2;
 
@@ -80,7 +218,7 @@
                 }
             }
         }
-        .skill-progress-area{
+        .skill-progress-section{
             position: relative;
             z-index: 2;
             background-color: $white;
@@ -163,28 +301,27 @@
     }
 }
 
-// BRAND ANIMATION  
-.brand-slider-section{
-    padding: 120px 0px;
-    background: $gray-200;
-    .brand_slider_wrapper{ 
-        cursor: pointer;
-        .slider_items{
-            width: 20%;
+// Testimonial
+.testimonial-slider-section{
+    &.style-two{
+        overflow: hidden;
+
+       .section-title {
+        position: relative;
+        z-index: 2;
+        @include sm{
+            margin-bottom: 10px;
         }
-        button{
-            display: none!important;
-        }
-    
-        // Slick Dots
-        .slick-dots {
-          display: none;
-        }
-    } 
+       }
+       .slider-section-wrapper {
+        position: relative;
+        z-index: 2;
+       }
+    }
 }
 
-.brand-slider-area {
-    &.style-1 {
+.brand-slider-section {
+    &.style-one {
         @include md {
             padding: 100px 0;
         }
@@ -194,20 +331,97 @@
     }
 }
 
-
-// LATEST BLOG AND NEWS
-.blog-news-section{
- background: $gray-200;
- padding: 120px 0px;
- .blog-news-card{
-    &.style-two{
-        overflow: hidden;
+// Price section
+.price-section{
+    &.style-one {
+        @include md {
+            padding-bottom: 100px;
+        }
+        @include sm {
+            padding-bottom: 80px;
+        }
     }
- }
+    .container{
+        position: relative;
+        z-index: 20;
+    }
 }
 
-// IMAGE GALLERY
-.image-gallery-section{
-    background: $gray-200;
+// Counter UP
+.counter-up-section{
+    &.style-two{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 296px 0 80px;
+        margin-top: -236px;
+        z-index: 1;
+        @include md {
+            padding: 100px 0;
+            margin-top: 0;
+        }
+        @include sm {
+            padding: 80px 0;
+            margin-top: 0;
+        }
 
+        .overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $black;
+            opacity: 0.9;
+            z-index: -1;
+        }
+        .counter-card-wrapper{
+            padding: 0 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .divider{
+              width: 1px;
+              height: 100%;
+              background-color: #ffffff33;
+          }
+        }
+    }
+}
+
+
+.latest-posts-section {
+    &.style-two {
+
+        @include md {
+            padding: 100px 0;
+        }
+        @include sm {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+// Img Gallery
+.img-gallery-section{
+    .img-card{
+        width: 100%;
+        height: 250px;
+        position: relative;
+
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
 }

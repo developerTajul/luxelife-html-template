@@ -1664,12 +1664,6 @@
     padding-bottom: 100px;
   }
 }
-.py-xl-100{
-  @include xl{
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
 .pt-sm-40{
   @include sm{
     padding-top: 40px;
@@ -1719,11 +1713,5 @@
 .pb-lg-100{
   @include lg{
     padding-bottom: 100px;
-  }
-}
-
-.mt-sm-32{
-  @include sm{
-    margin-top: 32px;
   }
 }
