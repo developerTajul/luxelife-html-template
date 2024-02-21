@@ -1,131 +1,63 @@
 .about-image-card {
- &.style-one {
-    .main-img-wrapper {
-      .main-img-inner {
-        position: relative;
-
-        img {
-          position: relative;
-          top: 0;
-          left: 0;
-          z-index: 1;
-
-          @include lg {
-            width: 380px;
-          }
-          @include sm {
-            width: 340px;
-          }
-          @include xs {
-            width: 280px !important;
-          }
-        }
-
-        .top-image {
-          position: absolute;
-          top: 294px;
-          left: 155px;
-          background:rgba(217, 161, 76, 0.15);
-          overflow: hidden;
-          
-          @include xs {
-            top: 172px !important;
-            left: 88px !important;
-          }
-          @include sm {
-            top: 218px;
-            left: 115px;
-          }
-          @include lg {
-            left: unset;
-            right: 0;
-            top: 250px;
-          }
-          @include xl {
-            right: 10px;
-          }
-
-          img {
+    &.style-two {
+        .main-img-inner {
             position: relative;
-            margin-top: 35px;
-            margin-left: 31px;
-            z-index: 2;
 
-            @include lg {
-              width: 360px;
+            img {
+               @include lg {
+                width: 75%;
+               }
+               @include md {
+                width: 60%;
+               }
+               @include sm {
+                width: 100%;
+               }
             }
-            @include sm {
-              width: 250px;
+
+            .top-image {
+                position: absolute;
+                right: 38px;
+                bottom: -60px;
+
+                @include lg {
+                    right: 0;
+                    bottom: -80px;
+                }
+                @include md {
+                    right: unset;
+                    left: 100px;
+                    bottom: -80px;
+                }
+                @include sm {
+                    right: 0;
+                }
+                @include xs {
+                    right: 0;
+                    left: unset;
+                    bottom: -70px;
+                    text-align: end;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.03);
+                    }
+                }
+                img {
+                    transform: scale(1.0);
+                    @include transition;
+                    @include lg {
+                        width: 90%;
+                    }
+                    @include md {
+                        width: 100%;
+                    }
+                    @include sm {
+                        width: 70%;
+                    }
+                   
+                }
             }
-            @include xs {
-              width: 230px !important;
-            }
-            
-          }
         }
-
-        .image-shape {
-          position: absolute;
-          right: 50px;
-          bottom: 20px;
-        }
-      }
-      .review-card {
-        width: 307px;
-        height: 135px;
-        background-color: $primary-color;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        padding: 20px 30px;
-        margin-top: 60px;
-        position: relative;
-        z-index: 2;
-        margin-bottom: 24px;
-
-        @include sm {
-          margin-bottom: 0;
-          margin-top: 30px;
-          padding: 20px;
-          width: 264px;
-        }
-        @include lg {
-          margin-top: 30px;
-          padding: 20px;
-        }
-        @include xl {
-          margin-top: 30px;
-        }
-
-        .icon {
-          width: 65px;
-          height: 65px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-shrink: 0;
-        }
-        .card-text {
-          h2 {
-            color: $white;
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 60px;
-            text-transform: capitalize;
-
-            @include xs {
-              font-size: 38px;
-            }
-          }
-          span {
-            color: $white;
-            text-transform: capitalize;
-          }
-        }
-      }
-      
-      
     }
- }
 }
-

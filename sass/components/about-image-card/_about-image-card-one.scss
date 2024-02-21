@@ -1,178 +1,131 @@
 .about-image-card {
-    &.style-1 {
-       .main-img-wrapper {
+ &.style-one {
+    .main-img-wrapper {
+      .main-img-inner {
+        position: relative;
+
+        img {
+          position: relative;
+          top: 0;
+          left: 0;
+          z-index: 1;
+
+          @include lg {
+            width: 380px;
+          }
+          @include sm {
+            width: 340px;
+          }
+          @include xs {
+            width: 280px !important;
+          }
+        }
+
+        .top-image {
+          position: absolute;
+          top: 294px;
+          left: 155px;
+          background:rgba(217, 161, 76, 0.15);
+          overflow: hidden;
+          
+          @include xs {
+            top: 172px !important;
+            left: 88px !important;
+          }
+          @include sm {
+            top: 218px;
+            left: 115px;
+          }
+          @include lg {
+            left: unset;
+            right: 0;
+            top: 250px;
+          }
+          @include xl {
+            right: 10px;
+          }
+
+          img {
             position: relative;
-            margin-right: 30px;
+            margin-top: 35px;
+            margin-left: 31px;
+            z-index: 2;
 
             @include lg {
-              margin-right: 94px;
-            }
-
-            @include md {
-              margin-right: 94px;
+              width: 360px;
             }
             @include sm {
-              margin-right: 0;
+              width: 250px;
             }
             @include xs {
-              margin-right: 0px;
+              width: 230px !important;
             }
+            
+          }
+        }
 
-         .main-img-inner {
-           position: relative;
-           display: flex;
-           gap: 24px;
-           z-index: 2;
-           
-           @include xs {
-            gap: 14px;
-           }
+        .image-shape {
+          position: absolute;
+          right: 50px;
+          bottom: 20px;
+        }
+      }
+      .review-card {
+        width: 307px;
+        height: 135px;
+        background-color: $primary-color;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 30px;
+        margin-top: 60px;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 24px;
 
-           .main-img {
-            height: 438px;
-            object-fit: cover;
-              @include sm {
-                // width: 100%;
-                // height: 100%;
-              }
-              @media only screen and (min-width: 0px) and (max-width:380px){
-                height: 257px;
-              }
-              @media only screen and (min-width: 381px) and (max-width:575px){
-                height: 300px;
-              }
-              @media only screen and (min-width:576px) and (max-width:767px){
-                height: 100%;
-              }
-              img{
-                width: 100%;
-                height: 100%;
-              }
-           }
+        @include sm {
+          margin-bottom: 0;
+          margin-top: 30px;
+          padding: 20px;
+          width: 264px;
+        }
+        @include lg {
+          margin-top: 30px;
+          padding: 20px;
+        }
+        @include xl {
+          margin-top: 30px;
+        }
 
+        .icon {
+          width: 65px;
+          height: 65px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+        }
+        .card-text {
+          h2 {
+            color: $white;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 60px;
+            text-transform: capitalize;
 
-           .main-img,
-           .top-image{
-            &:hover{
-              img{
-                transform: scale(1.03);
-              }
-            }
-            img{
-              @include transition;
-            }
-           }
-           .top-image {
-            position: relative;
-            top: 36px;
-            right: 0;
-            flex-shrink: 0;
-            overflow: hidden;
-            height: 615px;
-            object-fit: cover;
-            @include transition;
-            @media only screen and (min-width: 0px) and (max-width:380px){
-              width: 50%;
-              top: 35px;
-              height: 360px;
-            }
-            @media only screen and (min-width: 381px) and (max-width:767px){
-              height: 420px;
-            }
-            img{
-              width: 100%;
-              height: 100%;
-            }
-           }
-   
-         }
-         .review-card-wrapper{
-            position: absolute;
-            max-width: 516px;
-            width: 100%;
-            bottom: -6px;
-            left: 40px;
-            z-index: 1;
-
-            @include sm {
-              left: 34px;
-              bottom: -36px;
-            }
-         
             @include xs {
-              left: 0;
-              bottom: -36px;
+              font-size: 38px;
             }
-         
-          
-         }
-         .review-card {
-            height: 380px;
-            background-color: rgba(217, 161, 76, 0.15);
-            display: flex;
-            align-items: flex-end;
-
-            @include sm {
-              width: 425px;
-              height: 340px;
-            }
-            @include xs {
-              width: 320px !important;
-              height: 230px;
-            }
-   
-           .card-text {
-                background-color: $primary-color;
-                padding: 20px 30px ;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 199px;
-                height: 135px;
-                gap: 5px;
-                margin-left: 37px;
-                margin-bottom: 26px;
-
-                @include sm {
-                  width: 165px;
-                  height: auto;
-                  margin-left: 35px;
-                  padding: 20px;
-                }
-                @include xs {
-                  width: 153px;
-                  margin-left: 0;
-                  margin-bottom: 0;
-                }
-
-             h2 {
-               color: $white;
-               font-size: 48px;
-               font-weight: 700;
-               line-height: 60px;
-               text-transform: capitalize;
-
-               @include sm {
-                font-size: 38px;
-                line-height: 48px;
-               }
-               @include xs {
-                font-size: 38px;
-                line-height: 30px;
-               }
-             }
-             span {
-               color: $white;
-               text-transform: capitalize;
-               text-align: center;
-               line-height: 24px;
-             }
-           }
-         }
-         
-         
-       }
+          }
+          span {
+            color: $white;
+            text-transform: capitalize;
+          }
+        }
+      }
+      
+      
     }
-   }
-   
-   
+ }
+}
+

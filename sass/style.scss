@@ -68,38 +68,35 @@ Footer
 // 4.Slider Section
 @import "components/slider/slider-style-one";
 @import "components/slider/slider-style-two"; 
-@import "components/slider/slider-style-four";  
+@import "components/slider/slider-style";  
 
 // 5.Info Card 
 @import "components/info-card/_info-card";
+@import "components/info-card/info-card-one";
 @import "components/info-card/info-card-two";
 @import "components/info-card/info-card-three";
-@import "components/info-card/info-card-five";
 
 // 6.Icon Card
 @import "components/icon-card/icon-card";
+@import "components/icon-card/icon-card-one"; 
 @import "components/icon-card/icon-card-two"; 
-@import "components/icon-card/icon-card-four"; 
 
 // 7.About Image Card
-@import "components/about-image-card/about-image-card-two";
 @import "components/about-image-card/about-image-card-one";
-@import "components/about-image-card/about-image-card-four";
+@import "components/about-image-card/about-image-card-two";
 @import "components/about-image-card/about-image-card-three";
-@import "components/about-image-card/about-image-card-five";
+@import "components/about-image-card/about-image-card-four"; 
 
-// Timeline Card 
 
 // 8.About Info Card
 @import "components/about-info-card/about-info-card";
-@import "components/about-info-card/about-info-card-two";  
+@import "components/about-info-card/about-info-card-three";  
 
 
 // 9.Counter Card
 @import "components/counter/counter-card"; 
 @import "components/counter/counter-card-three"; 
-
-// 10.Process Step Card 
+ 
 
 // 10.Brand Marquee
 @import "components/brand-marquee/brand-marquee";
@@ -121,7 +118,7 @@ Footer
 @import "components/post-card/post-card";
 @import "components/post-card/post-card-one";
 @import "components/post-card/post-card-two"; 
-@import "components/post-card/post-card-four";  
+@import "components/post-card/post-card-three";  
 @import "components/post-card/post-details";
 
 // 15.Skill Progress Card
@@ -162,8 +159,7 @@ Footer
 @import "components/team/team-slider-controls";
 
 // 26.Portfolio
-@import "components/portfolio/portfolio"; 
-//@import "components/portfolio/portfolio-slider-controls";
+@import "components/portfolio/portfolio";  
 
 // Image Card
 @import "components/image-card/image-card";

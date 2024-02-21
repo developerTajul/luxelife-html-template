@@ -149,23 +149,11 @@
           margin-left: 0;
         }
       }
-      //.children {
-      //  .comments-box {
-      //    margin-left: 100px;
-      //    border-top: 1px solid #D2D2D2;
-      //  }
-      //}
+ 
     }
 
     .comments-box {
-      //padding: 50px;
-      //border-bottom: 1px solid $gray-300;
-      ////border-radius: 8px;
-      //margin-bottom: 24px;
-      //
-      //@include rmaxwd(767) {
-      //  padding: 30px;
-      //}
+ 
       .comments-avatar {
         float: left;
         width: 104px;
@@ -241,39 +229,7 @@
           i{
             color: $primary-color;
           }
-          //
-          //.btn_outline {
-          //  position: absolute;
-          //  left: 0px;
-          //  top: 0px;
-          //  width: 1920px;
-          //  height: 5555px;
-          //  z-index: 155;
-          //}
-          //.Reply {
-          //  font-size: 16px;
-          //  font-family: "Myriad Pro";
-          //  color: rgb(38, 38, 44);
-          //  line-height: 2.25;
-          //  text-align: left;
-          //  position: absolute;
-          //  left: 1054.937px;
-          //  top: 3573.546px;
-          //  z-index: 154;
-          //}
-          //.bg {
-          //  border-style: solid;
-          //  border-width: 1px;
-          //  border-color: rgb(33, 174, 224);
-          //  background-color: rgba(53, 62, 235, 0);
-          //  position: absolute;
-          //  left: 1023px;
-          //  top: 3533px;
-          //  width: 102px;
-          //  height: 46px;
-          //  z-index: 153;
-          //}
-
+ 
 
           @include sm {
             position: unset;
