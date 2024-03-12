@@ -1,0 +1,30 @@
+.counter-card {
+    &.style-3{
+        padding: 20px 0;
+
+        .content{
+            gap: 0;
+
+          .number{
+            -webkit-text-stroke: 1px $white;
+            width: 145px;
+            max-width: 145px;
+            display: flex;
+            gap: 10px;
+            @include lg{
+              max-width: 116px;
+              font-size: 48px;
+            }
+            @include sm{
+              font-size: 48px;
+              justify-content: center;
+            }
+          }
+          .title{
+            color: $white;
+            font-size: 16px;
+            margin-top: -10px;
+          }
+        }
+      }
+}
