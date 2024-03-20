@@ -3754,6 +3754,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   align-items: center;
   background-color: #23262D;
   margin-left: -200px;
+  margin-bottom: -10px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .header-section.style-one .logo-wrapper {
