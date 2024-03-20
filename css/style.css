@@ -3526,7 +3526,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: relative;
 }
 .main-menu ul li.active > a, .main-menu ul li.current-menu-ancestor > a {
-  color: #D9A14C;
+  color: #D9A14C !important;
 }
 .main-menu ul li.dropdown > a {
   padding-right: 30px !important;
@@ -3754,7 +3754,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   align-items: center;
   background-color: #23262D;
   margin-left: -200px;
-  margin-bottom: -20px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .header-section.style-one .logo-wrapper {
@@ -3977,7 +3976,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .header-section.style-three .header-menu-section .main-menu ul li a {
   color: #ffffff;
   transition: all 0.5s ease-out;
-  padding: 51px 24px;
+  padding: 40px 24px;
 }
 .header-section.style-three .header-menu-section .main-menu ul li a:hover {
   color: #D9A14C;
@@ -12244,6 +12243,7 @@ ul.children {
   padding-bottom: 93px;
   background-position: center !important;
   background-repeat: no-repeat !important;
+  background-size: cover;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .subscribe-section {

@@ -312,7 +312,7 @@
         &.current-menu-ancestor {
           position: relative;
           > a {
-            color: $primary-color;
+            color: $primary-color!important;
   
             //&:after {
             //  position: absolute;
