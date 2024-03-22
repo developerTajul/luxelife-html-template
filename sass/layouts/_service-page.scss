@@ -1,0 +1,103 @@
+ 
+// Service Details Page
+.service-details-page {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @include sm {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include md {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @include lg {
+        padding-bottom: 120px;
+    }
+
+    .service-details-wrapper {
+        padding-right: 38px;
+        @include rmaxwd(1399){
+            padding-right: 12px;
+        }
+    }
+
+    .details-content {
+        .feature-image {
+            overflow: hidden;
+            margin-bottom: 30px;
+            position: relative;
+            .icon{
+                width: 60px;
+                height: 60px;
+                flex-shrink: 0;
+                padding: 8px;
+                background-color: $white;
+                position: absolute;
+                z-index: 1;
+                left: 30px;
+                top: 30px;
+                img{
+                    width: auto;
+                }
+            }
+            img {
+                width: 100%;
+            }
+        }
+
+        .text {
+            margin-bottom: 30px;
+
+            .title {
+                color: $black;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .member-court {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+
+            .desc {
+                font-family: $heading-font;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 27px;
+                color: $black;
+                margin-bottom: 0;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 29px;
+            margin-bottom: 0;
+        }
+
+        .icon-card-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+            @include rmaxwd(991){
+                flex-direction: column;
+            }
+            @include lg{
+                flex-direction: column;
+            }
+            @include rmaxwd(1399){
+                gap: 30px;
+            }
+        }
+    }
+}
+ 
