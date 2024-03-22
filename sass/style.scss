@@ -1,4 +1,4 @@
-/*
+/**
  * Stylesheet:  style.css
  * Theme:       Luxelife - Architecture & Interior Design HTML5 Template
  * Version:     1.0
@@ -6,44 +6,41 @@
  * 
  */
 /* Table of contents
-========================= 
-  1.Preloader   
-  2.Scrollup   
-  3.Nav Menu   
-  4.Slider Section  
-  5.Info Card   
-  6.Icon Card   
-  7.About Image Card   
-  8.About Info Card   
-  9.Counter Card  
-  10.Brand Marquee   
-  11.Testimonial Card  
-  12.Accordion Card  
-  13.Client Logo Card   
-  14.Post Card  
-  15.Skill Progress Card  
-  16.Price Card  
-  17.Call To Action Card 
-  18.Title Card 
-  19.Breadcrumb   
-  20.Pagination's  
-  21.Project Details Page   
-  22.Sidebar  
-  23.Comment List   
-  24.Comment Form 
-  25.Team Member   
-  26.Portfolio  
-  27.Image Card  
-  28.Video Popup Modal Card   
-  29.Portfolio Slider   
-  30.Masonry Portfolio Gallery   
-  31.layouts   
-  32.Contact Page   
-  33.Service Page   
-  34.Team Page   
-  Footer   
-===========================*/
+=========================
+1.Preloader
+2.Scrollup
+3.Nav Menu
+4.Slider Section
+5.Info Card
+6.Icon Card
+7.About Image Card
+8.About Info Card
+9.Counter Card
+10.Process Step Card
+11.Testimonial Card
+12.Accordion Card
+13.Client Logo Card
+14.Post Card
+15.Skill Progress Card
+16.Price Card
+17.Call To Action Card
+18.Title Card
+19.Breadcrumb
+20.Pagination's
+21.Project Details Page
+22.Sidebar
+23.Comment List
+24.Comment Form
+25.Team Member
+26.Portfolio
+27.About Page
+28.Contact Page
+29.Service Page
+30.Team Page
+Footer
 
+
+===========================*/
 /* Theme Default CSS */
 @import "base/variables";
 @import "base/mixin";
@@ -52,13 +49,13 @@
 @import "base/unittest";
 @import "base/keyframes";
 
-/* 1.Preloader  */
+// 1.Preloader
 @import "components/preeloader";
 
-/* 2.Scrollup  */
+// 2.Scrollup
 @import "base/scrollup";
 
-/* 3.Nav Menu  */
+// 3.Nav Menu
 @import "base/header";
 @import "base/header-one";
 @import "base/header-two"; 
@@ -68,130 +65,132 @@
 @import "base/title-section";
 
 
-/* 4.Slider Section  */
+// 4.Slider Section
 @import "components/slider/slider-style-one";
 @import "components/slider/slider-style-two"; 
 @import "components/slider/slider-style";  
- 
-/* 5.Info Card  */
+
+// 5.Info Card 
 @import "components/info-card/_info-card";
 @import "components/info-card/info-card-one";
 @import "components/info-card/info-card-two";
 @import "components/info-card/info-card-three";
 
-/* 6.Icon Card  */
+// 6.Icon Card
 @import "components/icon-card/icon-card";
 @import "components/icon-card/icon-card-one"; 
 @import "components/icon-card/icon-card-two"; 
 
-/* 7.About Image Card  */
+// 7.About Image Card
 @import "components/about-image-card/about-image-card-one";
 @import "components/about-image-card/about-image-card-two";
 @import "components/about-image-card/about-image-card-three";
 @import "components/about-image-card/about-image-card-four"; 
 
 
-/* 8.About Info Card  */
+// 8.About Info Card
 @import "components/about-info-card/about-info-card";
 @import "components/about-info-card/about-info-card-three";  
 
 
-/* 9.Counter Card  */
+// 9.Counter Card
 @import "components/counter/counter-card"; 
 @import "components/counter/counter-card-three"; 
  
 
-/* 10.Brand Marquee  */
+// 10.Brand Marquee
 @import "components/brand-marquee/brand-marquee";
 
 
-/* 11.Testimonial Card  */
+// 11.Testimonial Card
 @import "components/testimonial-card/testimonial-card";
 @import "components/testimonial-card/testimonial-card-two"; 
 @import "components/testimonial-card/testimonial-card-four";  
 @import "components/testimonial-card/testimonial-slider-card";
 
-/* 12.Accordion Card  */
+// 12.Accordion Card
 @import "components/accordion/accordion";  
 
-/* 13.Client Logo Card  */
+// 13.Client Logo Card
 @import "components/client-logo/client-logo";
- 
-/* 14.Post Card  */
+
+// 14.Post Card
 @import "components/post-card/post-card";
 @import "components/post-card/post-card-one";
 @import "components/post-card/post-card-two"; 
 @import "components/post-card/post-card-three";  
 @import "components/post-card/post-details";
 
-/* 15.Skill Progress Card  */
+// 15.Skill Progress Card
 @import "components/skill-progress";
 
-/* 16.Price Card  */
+// 16.Price Card
 @import "components/price-card";
 
-/* 17.Call To Action Card */
+// 17.Call To Action Card
 @import "components/call-to-action-card";
 
-/* 18.Title Card  */
+// 18.Title Card
 @import "base/title-section";
 
-/* 19.Breadcrumb  */
+// 19.Breadcrumb
 @import "components/breadcrumb/breadcrumb";
 
-/* 20.Pagination's  */
+// 20.Pagination's
 @import "components/paginations";
 @import "components/nav-tabs";
 
-/* 21.Project Details Page  */
+// 21.Project Details Page
 @import "layouts/project-details";
 @import "components/list-item";
 
-/* 22.Sidebar  */
+// 22.Sidebar
 @import "base/sidebar";
 @import "base/sidebar-two";
 
-/* 23.Comment List  */
+// 23.Comment List
 @import "components/comment-list";
 
-/* 24.Comment Form  */
+// 24.Comment Form
 @import "components/comment-form";
- 
-/* 25.Team Member  */
+
+// 25.Team Member
 @import "components/team/team-member";
 @import "components/team/team-slider-controls";
 
-/* 26.Portfolio  */
+// 26.Portfolio
 @import "components/portfolio/portfolio";  
 
-/* 27.Image Card  */
+// Image Card
 @import "components/image-card/image-card";
 
-/* 28.Video Popup Modal Card  */
+// Video Popup Modal Card
 @import "components/video-popup-card/video-popup-card";  
 
 
-/* 29.Portfolio Slider  */
+//Portfolio Slider
 @import "components/project-card/project-card";
 @import "components/project-card/project-card-two"; 
 
 
-/* 30.Masonry Portfolio Gallery  */
+// Masonry Portfolio Gallery
 @import "components/masonary-portfolio-gallery/masonary-portfolio-gallery";
 
-/* 31.layouts  */
-@import "layouts/pages"; 
+// layouts
+@import "layouts/pages";
 
-/* 32.Contact Page  */
+// 27.About Page
+
+// 28.Contact Page
 @import "layouts/contact-page";
 
-/* 33.Service Page  */
+// 29.Service Page
 @import "layouts/service-page";
 
-/* 34.Team Page  */
+// 30.Team Page
 @import "layouts/team-member";
 
-/* Footer  */  
+// Footer   
 @import "base/footer-one";
 @import "base/footer-two"; 
 @import "base/footer-three";

@@ -1,4 +1,4 @@
-/*
+/**
  * Stylesheet:  style.css
  * Theme:       Luxelife - Architecture & Interior Design HTML5 Template
  * Version:     1.0
@@ -6,42 +6,40 @@
  * 
  */
 /* Table of contents
-========================= 
-  1.Preloader   
-  2.Scrollup   
-  3.Nav Menu   
-  4.Slider Section  
-  5.Info Card   
-  6.Icon Card   
-  7.About Image Card   
-  8.About Info Card   
-  9.Counter Card  
-  10.Brand Marquee   
-  11.Testimonial Card  
-  12.Accordion Card  
-  13.Client Logo Card   
-  14.Post Card  
-  15.Skill Progress Card  
-  16.Price Card  
-  17.Call To Action Card 
-  18.Title Card 
-  19.Breadcrumb   
-  20.Pagination's  
-  21.Project Details Page   
-  22.Sidebar  
-  23.Comment List   
-  24.Comment Form 
-  25.Team Member   
-  26.Portfolio  
-  27.Image Card  
-  28.Video Popup Modal Card   
-  29.Portfolio Slider   
-  30.Masonry Portfolio Gallery   
-  31.layouts   
-  32.Contact Page   
-  33.Service Page   
-  34.Team Page   
-  Footer   
+=========================
+1.Preloader
+2.Scrollup
+3.Nav Menu
+4.Slider Section
+5.Info Card
+6.Icon Card
+7.About Image Card
+8.About Info Card
+9.Counter Card
+10.Process Step Card
+11.Testimonial Card
+12.Accordion Card
+13.Client Logo Card
+14.Post Card
+15.Skill Progress Card
+16.Price Card
+17.Call To Action Card
+18.Title Card
+19.Breadcrumb
+20.Pagination's
+21.Project Details Page
+22.Sidebar
+23.Comment List
+24.Comment Form
+25.Team Member
+26.Portfolio
+27.About Page
+28.Contact Page
+29.Service Page
+30.Team Page
+Footer
+
+
 ===========================*/
 /* Theme Default CSS */
 * {
@@ -3228,7 +3226,6 @@ body.admin-bar .header-menu-area.sticky_menu {
     background-position: 0 -23px, 0 0, 100% 0, -23px 100%;
   }
 }
-/* 1.Preloader  */
 #preloader {
   position: fixed;
   top: 0;
@@ -3250,7 +3247,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   top: 50%;
 }
 
-/* 2.Scrollup  */
 .scrollup-wrapper {
   position: fixed;
   right: 40px;
@@ -3279,7 +3275,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: block;
 }
 
-/* 3.Nav Menu  */
 .header-top {
   background-color: #D9A14C;
   display: flex;
@@ -3531,7 +3526,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: relative;
 }
 .main-menu ul li.active > a, .main-menu ul li.current-menu-ancestor > a {
-  color: #D9A14C !important;
+  color: #D9A14C;
 }
 .main-menu ul li.dropdown > a {
   padding-right: 30px !important;
@@ -3759,7 +3754,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   align-items: center;
   background-color: #23262D;
   margin-left: -200px;
-  margin-bottom: -10px;
+  margin-bottom: -20px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .header-section.style-one .logo-wrapper {
@@ -3982,7 +3977,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .header-section.style-three .header-menu-section .main-menu ul li a {
   color: #ffffff;
   transition: all 0.5s ease-out;
-  padding: 40px 24px;
+  padding: 51px 24px;
 }
 .header-section.style-three .header-menu-section .main-menu ul li a:hover {
   color: #D9A14C;
@@ -4396,7 +4391,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   gap: 20px;
 }
 
-/* 4.Slider Section  */
 @media only screen and (min-width: 0px) and (max-width: 434px) {
   .slider-section.style-one {
     height: 1055px;
@@ -5317,7 +5311,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
 }
 
-/* 5.Info Card  */
 .info-card-wrapper {
   position: relative;
 }
@@ -5708,7 +5701,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   justify-content: center;
 }
 
-/* 6.Icon Card  */
 .icon-card.style-1 {
   display: flex;
   align-items: center;
@@ -5825,7 +5817,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
 }
 
-/* 7.About Image Card  */
 .about-image-card.style-one .main-img-wrapper .main-img-inner {
   position: relative;
 }
@@ -6346,7 +6337,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 100%;
 }
 
-/* 8.About Info Card  */
 .about-info-card .btn-wrapper {
   margin-top: 40px;
 }
@@ -6510,7 +6500,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-bottom: 0;
 }
 
-/* 9.Counter Card  */
 .counter-card.style-1 {
   position: relative;
   text-align: center;
@@ -6809,7 +6798,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-top: -10px;
 }
 
-/* 10.Brand Marquee  */
 .brand-marquee-section {
   display: flex;
   flex-direction: column;
@@ -6898,7 +6886,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 0;
 }
 
-/* 11.Testimonial Card  */
 .testimonial-card {
   padding: 40px;
   background-color: #ffffff;
@@ -7254,7 +7241,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-radius: 40px;
 }
 
-/* 12.Accordion Card  */
 .accordion-wrapper .accordion-list-item .accordion-head {
   display: flex;
   align-items: center;
@@ -7324,7 +7310,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin: 0;
 }
 
-/* 13.Client Logo Card  */
 .client-logo-wrapper .client-logo {
   display: flex;
   align-items: center;
@@ -7346,7 +7331,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   opacity: 1;
 }
 
-/* 14.Post Card  */
 .page-header {
   border-left: 4px solid #dfe2e9;
   padding-left: 45px;
@@ -8618,7 +8602,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
 }
 
-/* 15.Skill Progress Card  */
 .skill-progressbar-wrapper {
   display: flex;
   flex-direction: column;
@@ -8670,7 +8653,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-radius: 20px;
 }
 
-/* 16.Price Card  */
 .price-card {
   padding: 40px 43px 40px 40px;
   z-index: 2;
@@ -8819,7 +8801,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-size: 16px;
 }
 
-/* 17.Call To Action Card */
 .cta-section {
   padding: 120px 0;
   background-position: center;
@@ -8857,7 +8838,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #ffffff;
 }
 
-/* 18.Title Card  */
 .section-title {
   display: flex;
   justify-content: space-between;
@@ -9049,7 +9029,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   gap: 20px;
 }
 
-/* 19.Breadcrumb  */
 .page-breadcrumb-section {
   padding-top: 215px;
   padding-bottom: 125px;
@@ -9167,7 +9146,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 
-/* 20.Pagination's  */
 .wp-block-query-pagination,
 .navigation.posts-navigation,
 .comment-navigation {
@@ -9363,7 +9341,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
 }
 
-/* 21.Project Details Page  */
 .project-page-wrapper {
   padding-top: 144px;
   padding-bottom: 114px;
@@ -9642,7 +9619,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-size: 8px;
 }
 
-/* 22.Sidebar  */
 @media (max-width: 991px) {
   .sidebar {
     padding-left: 0;
@@ -10644,7 +10620,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #D9A14C;
 }
 
-/* 23.Comment List  */
 .comment-respond {
   margin-top: 70px;
 }
@@ -10877,7 +10852,6 @@ ul.children {
   list-style: none;
 }
 
-/* 24.Comment Form  */
 /*Comment Input Filed*/
 .post-comments-title .sub-title {
   font-family: "Rajdhani", sans-serif;
@@ -11041,7 +11015,6 @@ ul.children {
   transition: all 0.4s ease 0s;
 }
 
-/* 25.Team Member  */
 .team-member-card {
   position: relative;
   background-color: #F4F4F4;
@@ -11227,7 +11200,6 @@ ul.children {
   transition: all 0.5s ease-out;
 }
 
-/* 26.Portfolio  */
 .portfolio-wrapper {
   margin-right: 8px;
 }
@@ -11383,7 +11355,6 @@ ul.children {
   opacity: 1;
 }
 
-/* 27.Image Card  */
 .image-card {
   background-color: #ffffff;
 }
@@ -11451,7 +11422,6 @@ ul.children {
   margin-bottom: 0;
 }
 
-/* 28.Video Popup Modal Card  */
 .video-popup-card {
   position: relative;
   overflow: hidden;
@@ -11503,7 +11473,6 @@ ul.children {
   animation: none;
 }
 
-/* 29.Portfolio Slider  */
 .project-card {
   position: relative;
   transition: all 0.5s ease-out;
@@ -11832,7 +11801,6 @@ ul.children {
   transform: rotate(-45deg);
 }
 
-/* 30.Masonry Portfolio Gallery  */
 .img-gallery-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -12049,7 +12017,6 @@ ul.children {
   }
 }
 
-/* 31.layouts  */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-us-section.style-one {
     padding: 100px 0px !important;
@@ -12277,7 +12244,6 @@ ul.children {
   padding-bottom: 93px;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  background-size: cover;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .subscribe-section {
@@ -13078,7 +13044,6 @@ ul.children {
   }
 }
 
-/* 32.Contact Page  */
 .contact-form-section {
   position: relative;
 }
@@ -13261,7 +13226,6 @@ ul.children {
   border-radius: 0;
 }
 
-/* 33.Service Page  */
 .service-details-page {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -13364,7 +13328,6 @@ ul.children {
   }
 }
 
-/* 34.Team Page  */
 .team-details-section {
   padding-top: 130px;
   padding-bottom: 120px;
@@ -13496,7 +13459,6 @@ ul.children {
   }
 }
 
-/* Footer  */
 .footer {
   position: relative;
   z-index: 2;

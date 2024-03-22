@@ -36,11 +36,11 @@
        Jquery Sidebar Toggle
        ============================*/
         $(".mobile-menu-toggle-btn").on("click", function () {
-            $(".menu-sidebar-section").addClass("active");
+            $(".menu-sidebar-area").addClass("active");
             $(".body-overlay").addClass("active");
         });
         $(".menu-sidebar-close-btn").on("click", function () {
-            $(".menu-sidebar-section").removeClass("active");
+            $(".menu-sidebar-area").removeClass("active");
             $(".body-overlay").removeClass("active");
         });
 
@@ -48,7 +48,7 @@
        Jquery Body Overlay
        ============================*/
         $(".body-overlay").on("click", function () {
-            $(".menu-sidebar-section").removeClass("active");
+            $(".menu-sidebar-area").removeClass("active");
             $(".body-overlay").removeClass("active");
         });
         /*
@@ -353,12 +353,67 @@
             ],
         });
 
- 
+        /*
+       Testimonial Slider
+       ============================*/
+        $("#testimonial_style_one").slick({
+            slidesToShow: 3,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            variableWidth: true,
+            speed: 1500,
+            rtl: false,
+            responsive: [{
+                breakpoint: 1199,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 1,
+                        arrows: true,
+                        variableWidth: false,
+                        speed: 1500,
+                    },
+                },
+            {
+                breakpoint: 991,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 2,
+                        arrows: true,
+                        variableWidth: false,
+                        speed: 1500,
+                    },
+            },
+            {
+                breakpoint: 767,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 1,
+                        arrows: true,
+                        variableWidth: false,
+                        speed: 1500,
+                    },
+            },
+            ],
+        });
+
+        $('#testimonial_one_prev_btn').on('click', function (e) {
+            e.preventDefault();
+            $('#testimonial_style_one .slick-prev').trigger('click');
+        });
+        $('#testimonial_one_next_btn').on('click', function (e) {
+            e.preventDefault();
+            $('#testimonial_style_one .slick-next').trigger('click');
+        });
 
         /*
         Testimonial Slider
         ============================*/
-        $("#testimonial_style_one").slick({
+        $("#testimonial_style_two").slick({
             slidesToShow: 1,
             infinite: true,
             autoplay: false,
@@ -379,60 +434,6 @@
             }, ],
         });
 
-        $('#testimonial_one_prev_btn').on('click', function (e) {
-            e.preventDefault();
-            $('#testimonial_style_one .slick-prev').trigger('click');
-        });
-        $('#testimonial_one_next_btn').on('click', function (e) {
-            e.preventDefault();
-            $('#testimonial_style_one .slick-next').trigger('click');
-        });
-
- 
-
-        /*
-        Testimonial Slider
-        ============================*/
-        $("#testimonial_style_two").slick({
-            slidesToShow: 3,
-            infinite: true,
-            autoplay: false,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
-            rtl: false,
-            responsive: [
-                { 
-                    breakpoint: 1023,
-                    settings: {
-
-                        autoplay: true,
-                        slidesToShow: 1,
-                        arrows: true, 
-                        slidesToScroll: 1,
-                        variableWidth: false,
-                        centerMode: false,
-                        centerMargin: '50px',
-                    },
-                },
-                { 
-                    breakpoint: 1440,
-                    settings: { 
-                        autoplay: true,
-                        slidesToShow: 2,
-                        arrows: true, 
-                        slidesToScroll: 1,
-                        variableWidth: false,
-                        centerMode: false,
-                        centerMargin: '50px',
-                    },
-                },
-            ],
-        });
-
         $('#testimonial_two_prev_btn').on('click', function (e) {
             e.preventDefault();
             $('#testimonial_style_two .slick-prev').trigger('click');
@@ -440,6 +441,106 @@
         $('#testimonial_two_next_btn').on('click', function (e) {
             e.preventDefault();
             $('#testimonial_style_two .slick-next').trigger('click');
+        });
+
+
+        /*
+        Testimonial Slider
+        ============================*/
+        $("#testimonial_style_three").slick({
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            rtl: false,
+            responsive: [{
+                breakpoint: 1023,
+                settings: {
+                    autoplay: true,
+                    slidesToShow: 1,
+                    arrows: true,
+                },
+            }, ],
+        });
+
+        $('#testimonial_three_prev_btn').on('click', function (e) {
+            e.preventDefault();
+            $('#testimonial_style_three .slick-prev').trigger('click');
+        });
+        $('#testimonial_three_next_btn').on('click', function (e) {
+            e.preventDefault();
+            $('#testimonial_style_three .slick-next').trigger('click');
+        });
+
+
+        /*
+        Testimonial Slider
+        ============================*/
+        $("#testimonial_style_four").slick({
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: false,
+            slidesToScroll: 1,
+            loop: true,
+            dots: true,
+            speed: 1500,
+            variableWidth: true,
+            centerMode: true,
+            rtl: false,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+
+
+        /*
+        Testimonial Slider
+        ============================*/
+        $("#testimonial_style_five").slick({
+            slidesToShow: 2,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: false,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            variableWidth: true,
+            rtl: false,
+            responsive: [{
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 1,
+                        variableWidth: true,
+                        centerMode: true,
+                    },
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        variableWidth: false,
+                    },
+                },
+            ],
         });
 
 
