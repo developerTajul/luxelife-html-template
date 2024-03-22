@@ -36,11 +36,11 @@
        Jquery Sidebar Toggle
        ============================*/
         $(".mobile-menu-toggle-btn").on("click", function () {
-            $(".menu-sidebar-area").addClass("active");
+            $(".menu-sidebar-section").addClass("active");
             $(".body-overlay").addClass("active");
         });
         $(".menu-sidebar-close-btn").on("click", function () {
-            $(".menu-sidebar-area").removeClass("active");
+            $(".menu-sidebar-section").removeClass("active");
             $(".body-overlay").removeClass("active");
         });
 
@@ -48,7 +48,7 @@
        Jquery Body Overlay
        ============================*/
         $(".body-overlay").on("click", function () {
-            $(".menu-sidebar-area").removeClass("active");
+            $(".menu-sidebar-section").removeClass("active");
             $(".body-overlay").removeClass("active");
         });
         /*
@@ -243,7 +243,7 @@
                 },
             }, ],
         });
-        $(".slider-wrapper-six").slick({
+        $(".slider-wrapper-three").slick({
             slidesToShow: 1,
             infinite: true,
             autoplay: false,
