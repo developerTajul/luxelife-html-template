@@ -60,15 +60,17 @@ Footer
 @import "base/header-one";
 @import "base/header-two"; 
 @import "base/header-three"; 
+@import "base/header-four"; 
 @import "components/meanmenu";
 @import "base/menu-sidebar";
 @import "base/title-section";
 
 
 // 4.Slider Section
+@import "components/slider/slider-style";  
 @import "components/slider/slider-style-one";
 @import "components/slider/slider-style-two"; 
-@import "components/slider/slider-style";  
+@import "components/slider/slider-style-three"; 
 
 // 5.Info Card 
 @import "components/info-card/_info-card";

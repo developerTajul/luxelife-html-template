@@ -1,0 +1,14 @@
+.about-us-section{
+    &.style-three{
+        padding: 0px 0px 120px 0px;
+
+        .list-item-wrapper .list-item .text {
+            font-family: "Rajdhani", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 27px;
+            color: #ffffff;
+            display: block;
+        }
+    }
+}
