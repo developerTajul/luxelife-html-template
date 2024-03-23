@@ -1,0 +1,113 @@
+.post-card {
+    &.style-four {
+      flex-direction: column;
+      gap: 26px;
+      @include lg {
+        margin: 0 10px;
+      }
+ 
+  
+      .image {
+        height: 433px;
+  
+        @include xl {
+          height: 300px;
+        }
+        @include lg {
+          height: 300px;
+        }
+        @include md {
+          height: 300px;
+        }
+        @include sm {
+          height: 300px;
+        }
+      }
+      .content {
+        padding: 20px 40px 40px;
+        gap: 20px;
+        border: none;
+        background-color: $white;
+        @include xl {
+          padding: 20px 30px 30px;
+        }
+        @include lg {
+          padding: 20px;
+        }
+        @include md {
+          padding: 20px;
+        }
+        @include sm {
+          gap: 20px;
+        }
+        @include xs {
+          padding: 30px;
+        }
+  
+        .title {
+          margin-bottom: 20px;
+          @include lg {
+            margin-bottom: 5px;
+          }
+          @include md {
+            margin-bottom: 10px;
+          }
+        } 
+
+      }
+      .post-meta {
+  
+        .single-post-meta {
+          i {
+            color: $gray-800;
+            @include transition;
+          }
+          @include lg {
+            gap: 5px;
+          }
+        }
+      }
+
+                  
+    //   &:before{
+    //     content: "";
+    //     background-color: #FF9205;
+    //     width: 100%;
+    //     height: 1px;
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     transform: scaleX(0);
+    //     -webkit-transform: scaleX(0);
+    //     -moz-transform: scaleX(0);
+    //     -ms-transform: scaleX(0);
+    //     -o-transform: scaleX(0);
+    //     transition: all 0.5s ease-in-out;
+    //     -webkit-transition: all 0.5s ease-in-out;
+    //     -moz-transition: all 0.5s ease-in-out;
+    //     -ms-transition: all 0.5s ease-in-out;
+    //     -o-transition: all 0.5s ease-in-out;
+    // }
+
+    &:hover{
+        &:before{
+            transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+            -moz-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+            -o-transform: scaleX(1); 
+        }
+
+        
+        .post-meta {
+            .single-post-meta {
+              i {
+                color: $primary-color;
+                @include transition;
+              }
+            }
+          }
+    }
+    }
+  }
+  

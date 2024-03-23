@@ -656,6 +656,52 @@
         });
 
 
+                /*
+        Post Card Slider style three
+        ============================*/
+        $("#post_card_slider_wrapper_three").slick({
+            slidesToShow: 3,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: true, 
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            rtl: false,
+            responsive: [{
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        variableWidth: false,
+                    },
+                },
+            ],
+        });
+
+        $('.latest-posts-section .slider-nav-prev-btn').on('click', function (e) {
+            e.preventDefault();
+            $('#post_card_slider_wrapper_three .slick-prev').trigger('click');
+        });
+        $('.latest-posts-section .slider-nav-next-btn').on('click', function (e) {
+            e.preventDefault();
+            $('#post_card_slider_wrapper_three .slick-next').trigger('click');
+        });
+
+
         /*
        Related Portfolio Slider
        ============================*/

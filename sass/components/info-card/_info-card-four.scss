@@ -75,7 +75,7 @@
         -moz-transition: all 0.5s ease-in-out;
         -ms-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
-}
+    }
 
     &:hover{
         &:before{
@@ -86,12 +86,6 @@
             -o-transform: scaleX(1); 
         }
     }
-
-    //   &:hover{
-    //     &:after{
-    //         -webkit-transform: scale(1);
-    //         transform: scale(1);
-    //     }
-    //   }
+ 
     }
   }
