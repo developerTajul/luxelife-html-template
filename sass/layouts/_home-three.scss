@@ -1,3 +1,4 @@
+/* About Us Section Style three */ 
 .about-us-section{
     &.style-three{
         padding: 0px 0px 120px 0px;
@@ -9,6 +10,44 @@
             line-height: 27px;
             color: #ffffff;
             display: block;
+        }
+
+        @include md{
+            padding: 0px 0px 100px 0px;
+        }
+    }
+}
+
+
+/* Cta Section Style three */
+.cta-section{
+    &.style-three{
+        padding: 206px 0px; 
+        .cta-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; 
+            background:  linear-gradient(90deg, rgba(33, 33, 33, 0.69) 0.27%, rgba(33, 33, 33, 0.24) 100.66%);
+            z-index: 1;
+        }
+        .cta-wrapper{
+            z-index: 2;
+        }
+
+        @include md{
+            padding: 0px 0px 180px 0px;
+        }
+    }
+}
+
+/* Work Process Section */
+.work-process-section {
+    &.style-three{
+        padding: 120px 0px;
+        @include md{
+            padding: 100px 0px;
         }
     }
 }
