@@ -2,13 +2,7 @@
 
 .header-section {
   &.style-two {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999; 
-
-
+    background: $white; 
     .search-btn-with-btn {
       gap: 40px;
       @include xl{
@@ -34,6 +28,7 @@
 
     // Start Header Nav
     .header-menu-section {
+      box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.05);
       .main-menu{
         @include xl{
           margin-left: 38px;
@@ -88,9 +83,9 @@
         ul {
           li {
             a {
-              color: $white;
+              color: $black;
               @include transition;
-              padding: 51px 24px;
+              padding: 40px 24px;
 
               &:hover {
                 color: $primary-color;
