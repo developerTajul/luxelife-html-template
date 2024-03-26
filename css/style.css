@@ -7345,6 +7345,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-top: -10px;
 }
 
+.counter-card.style-four .counter-up-wrapper {
+  border: 2px solid #5a5a5a;
+  padding: 20px;
+}
 .counter-card.style-four .counter-up-wrapper .number .counter {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ffffff;
