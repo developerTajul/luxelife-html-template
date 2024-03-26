@@ -345,7 +345,7 @@
         font-size: 16px;
         @include transition;
         position: relative;
-        font-family: $roboto-font;
+        font-family: $body-font;
         display: flex;
         align-items: center;
         gap: 8px;
@@ -440,7 +440,7 @@
             display: inline-block;
             width: 100%;
             margin-bottom: 0;
-            font-family: $roboto-font;
+            font-family: $body-font;
             @include transition;
           }
         }
@@ -605,12 +605,12 @@
       align-items: center;
       justify-content: flex-end;
       gap: 10px;
-      font-family: $roboto-font;
+      font-family: $body-font;
     }
 
     a {
       color: $primary-color;
-      font-family: $roboto-font;
+      font-family: $body-font;
     }
   }
 
