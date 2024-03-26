@@ -7345,6 +7345,33 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-top: -10px;
 }
 
+.counter-card.style-four .counter-up-wrapper .number .counter {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%; /* 78.2px */
+}
+.counter-card.style-four .counter-up-wrapper .number .suffix {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%; /* 78.2px */
+}
+.counter-card.style-four .counter-up-wrapper .title {
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+
 .brand-marquee-section {
   display: flex;
   flex-direction: column;
@@ -11148,7 +11175,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .footer-widget-info .promotion-card .short-desc {
   font-size: 18px;
   line-height: 30px;
-  font-weight: "Rubik", sans-serif;
+  font-weight: 600;
 }
 .footer-widget-info .promotion-card h4 {
   color: #ffffff;

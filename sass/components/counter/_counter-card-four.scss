@@ -1,0 +1,36 @@
+.counter-card{ 
+    &.style-four{
+        .counter-up-wrapper{
+            .number{ 
+                .counter{ 
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: $white;
+                    font-family: $heading-font;
+                    font-size: 68px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 115%; /* 78.2px */
+
+                }
+                .suffix{
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: $white;
+                    font-family: $heading-font;
+                    font-size: 68px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 115%; /* 78.2px */
+                    
+                }
+            }
+            .title{
+                color: $white; 
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; /* 187.5% */
+            }
+        }
+    }
+}
