@@ -42,8 +42,25 @@
     }
 }
 
- 
+/* Testimonial Section Style Threee */
+.testimonial-section{
+    &.style-three {
+        background-color: #282B33;
+        padding-bottom: 190px;
+        position: relative;
+        z-index: -1;
+        overflow: hidden;
+    } 
+}
 
+/* Counter Section Style Three */
+.counter-section{
+    &.style-three{
+        background-color: transparent;
+        margin-top: -90px;
+        z-index: 1;
+    }
+}
 
 /* Project Section Style Three */
 .project-section {
