@@ -1,84 +1,52 @@
 .testimonial-card {
   &.style-2 {
-    flex-direction: row;
-    gap: 110px;
-    padding: 40px 81px 48px 40px;
-    margin-left: 2px;
-    @include xl{
-      padding-right: 40px;
-    }
-    @include lg {
-      padding: 40px 80px 40px 40px;
-    }
-
-    @include xl {
-      gap: 40px;
-      align-items: flex-start;
-    }
+    width: 850px;
+    align-items: start;
+    gap: 40px;
+    padding: 40px 137px;
+    background-color: $white;
+    margin: 0 15px;
 
     @include sm {
-      padding-right: 50px;
-      flex-direction: column;
-      gap: 24px;
+      padding: 40px 30px;
+      width: 350px;
     }
     @include md {
-      gap: 40px;
-    }
-    @include lg {
-      padding-right: 50px;
-      flex-direction: column;
-      gap: 24px;
+      width: 750px;
     }
 
     .user-info-wrapper {
-      margin-top: 2px;
-      @include xl{
-        gap: 12px;  
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+
+      .user-img{
+        width: 85px;
+        height: 85px;
+        overflow: hidden;
+        border-radius: 50%;
       }
-      @include lg{
-        gap: 12px;  
-      }
-      .user-meta{
-        .designation{
-          @include xl{
-            margin: 0;
-          }
-          @include lg{
-            margin: 0;
-          }
-        }
+      .user-meta {
+        text-align: left;
       }
     }
 
     .content-wrapper{
-      .desc{
-        font-family: $body-font;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 40px;
-        margin-bottom: 0;
-
-        @include xl {
-          font-size: 18px;
-          line-height: 30px;
+      text-align: center;
+      .comma-icon{
+        i{
+          font-family: $font-awesome;
+          font-size: 48px;
+          line-height: 48px;
+          color: $white;
+          -webkit-text-stroke: 1px $primary-color;
         }
-        @include lg {
-          font-size: 20px;
-          line-height: 34px;
-        }
-        @include md {
-          font-size: 18px;
-          line-height: 26px;
-        }
-        @include sm {
-          font-size: 18px;
-          line-height: 30px;
-        }
-        @include xs {
-          font-size: 14px;
-          line-height: 30px;
-        }
+      }
+      .description{
+        margin-top: 20px;
       }
     }
   }

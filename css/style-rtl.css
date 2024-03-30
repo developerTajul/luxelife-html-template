@@ -1,8 +1,8 @@
-/**
+/*
  * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Theme:       Luxelife - Architecture & Interior Design HTML5 Template
  * Version:     1.0
- * Author:     	BoomDevs
+ * Author:     	MonPakhi
  * 
  */
 /* Table of contents
@@ -20297,7 +20297,7 @@ ul.children {
   margin-bottom: 40px;
   margin-top: -25px;
 }
-.footer-widget.widget_boomdevs-latest-posts-footer {
+.footer-widget.widget_monpakhi-latest-posts-footer {
   margin-top: -5px;
 }
 @media (max-width: 767px) {
@@ -20307,7 +20307,7 @@ ul.children {
   }
 }
 @media (max-width: 767px) {
-  .footer-widget.widget_boomdevs_contact_info_widget {
+  .footer-widget.widget_monpakhi_contact_info_widget {
     margin-bottom: 18px;
   }
 }

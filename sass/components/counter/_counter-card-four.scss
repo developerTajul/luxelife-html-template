@@ -1,8 +1,9 @@
 .counter-card{ 
     &.style-four{
+        border: 1px solid #4C5261;
+        background: #23262D;
         .counter-up-wrapper{
-            border: 2px solid #5a5a5a;
-            padding: 20px;
+            padding: 20px 30px;
             .number{ 
                 .counter{ 
                     -webkit-text-stroke-width: 1px;
