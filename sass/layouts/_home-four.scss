@@ -1,4 +1,4 @@
-/* Service List style one */
+/* Service List Section style four */
 .service-list-section{
     &.style-four{
         .service-list-card-wrapper{
@@ -26,6 +26,35 @@
                             color: $primary-color;
 }
                     }
+                }
+            }
+        }
+    }
+}
+
+/* Why Choose Us Section style four */
+.why-choose-us-section{
+    &.style-four{
+        .feature-wrapper{
+            margin-bottom: 40px;
+            .feature{
+                padding-right: 40px;
+                h3{
+                    color: $white;
+                    font-family: $heading-font;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px; /* 125% */
+                    margin-bottom: 8px;
+                }
+                p{ 
+                    color: $white;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px; /* 187.5% */
                 }
             }
         }
