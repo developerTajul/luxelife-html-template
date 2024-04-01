@@ -1,0 +1,33 @@
+/* Service List style one */
+.service-list-section{
+    &.style-four{
+        .service-list-card-wrapper{
+            border-right:  1px solid  $gray-800!important;  
+            .service-list-card{ 
+                transition: 1s;
+                -webkit-transition: 1s;
+                -moz-transition: 1s;
+                -ms-transition: 1s;
+                -o-transition: 1s;
+                &.border-bottom{
+                   border-bottom: 1px solid $gray-800!important; 
+                }
+                &:hover{
+                    .number{
+                        color: $primary-color;
+                    }
+                    .icon{
+                        i{
+                            transform: rotate(-45deg);
+                            -webkit-transform: rotate(-45deg);
+                            -moz-transform: rotate(-45deg);
+                            -ms-transform: rotate(-45deg);
+                            -o-transform: rotate(-45deg);
+                            color: $primary-color;
+}
+                    }
+                }
+            }
+        }
+    }
+}
