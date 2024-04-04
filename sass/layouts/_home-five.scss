@@ -1,0 +1,71 @@
+// counter-up-section
+.counter-up-section {
+    &.style-five {
+    background: #D9A14C;
+    margin: 0 80px;
+
+    @include md {
+        margin: 0 40px;
+    }
+
+    @include sm {
+        margin: 0 10px;
+    }
+    .counter-card-wrapper {
+        padding: 0 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .divider {
+            width: 1px;
+            height: 100%;
+            background-color: #ffffff33;
+        }
+    }
+    }
+}
+
+// video-popup-section
+.video-popup-section {
+    &.style-five {
+        margin: 0 80px;
+        @include md {
+            margin: 30px;
+        }
+        @include sm {
+            margin: 10px;
+        }
+        .video-popup-image {
+            @include xs {
+                height: 250px;
+            }
+        }
+        .video-popup-btn {
+            background-color: $primary-color;
+            border-radius: 50%;
+            padding: 15px;
+             
+            a {
+                background-color: $primary-color;
+                border: 1px solid $primary-color;
+                box-shadow: 0 0 0 0 rgba(217, 161, 76, 1);
+                width: 140px;
+                height: 140px;
+                @include md {
+                    width: 100px;
+                    height: 100px;
+                }
+                @include sm {
+                    width: 70px;
+                    height: 70px;
+                }
+                i {
+                    color: white;
+                    font-size: 30px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
