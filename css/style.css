@@ -12284,6 +12284,23 @@ ul.children {
   -ms-animation: none;
   animation: none;
 }
+@media (max-width: 991px) {
+  .video-popup-card.style-four {
+    margin-bottom: 80px;
+  }
+}
+.video-popup-card.style-four .video-popup-btn a {
+  border: 1px solid #ffffff;
+  background-color: initial;
+  width: 130px;
+  height: 130px;
+}
+.video-popup-card.style-four .video-popup-btn a i {
+  color: #D9A14C;
+  font-size: 46px;
+  margin-top: 8px;
+  margin-left: 6px;
+}
 
 .project-card {
   position: relative;
@@ -14085,7 +14102,7 @@ ul.children {
   display: none !important;
 }
 
-/* Service List style one */
+/* Service List Section style four */
 .service-list-section.style-four .service-list-card-wrapper {
   border-right: 1px solid #616670 !important;
 }
@@ -14109,6 +14126,130 @@ ul.children {
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   color: #D9A14C;
+}
+
+/* Why Choose Us Section style four */
+.why-choose-us-section.style-four .feature-wrapper {
+  margin-bottom: 40px;
+}
+.why-choose-us-section.style-four .feature-wrapper .feature {
+  padding-right: 40px;
+}
+.why-choose-us-section.style-four .feature-wrapper .feature h3 {
+  color: #ffffff;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 125% */
+  margin-bottom: 8px;
+}
+.why-choose-us-section.style-four .feature-wrapper .feature p {
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+
+/* Team Member Section Style four */
+.team-member-section.style-four .team-member-card .content {
+  padding: 30px 45px;
+  background: #282828;
+}
+.team-member-section.style-four .team-member-card .content .name {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 125% */
+}
+.team-member-section.style-four .team-member-card .content .designation {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+.team-member-section.style-four .team-section-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.team-member-section.style-four .team-section-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.team-member-section.style-four .team-section-image:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/* Awar Section Style Four */
+.award-section.style-four .award-box {
+  border-top: none;
+  border-bottom: 1px solid #616670;
+  padding: 40px 0;
+}
+.award-section.style-four .award-box .title-wrapper .title {
+  color: #ffffff;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 125% */
+}
+.award-section.style-four .award-box .title-wrapper .year {
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+.award-section.style-four .award-box .description {
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+.award-section.style-four .award-box .icon a i {
+  color: #ffffff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.award-section.style-four .award-box:hover .icon a i {
+  color: #D9A14C;
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
 }
 
 .apartment-section .comment-respond {

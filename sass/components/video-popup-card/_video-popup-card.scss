@@ -71,11 +71,11 @@
   //    }
   //  }
   //}
-  //&.style-three {
+  // &.style-three {
   //  overflow: visible;
   //  padding: 0;
   //  box-shadow: none;
-  //
+  
   //  .video-popup-image {
   //    border-radius: 12px;
   //    overflow: hidden;
@@ -89,12 +89,32 @@
   //      width: 135px;
   //      height: 135px;
   //      @include gradient-color-red;
-  //
+  
   //      @include rmaxwd(767) {
   //        width: 80px;
   //        height: 80px;
   //      }
   //    }
   //  }
-  //}
+  // }
+    &.style-four {  
+   @include rmaxwd(991) {
+     margin-bottom: 80px;
+   }
+  
+   .video-popup-btn {
+     a {
+      border: 1px solid #ffffff;
+      background-color: initial;
+      width: 130px;
+      height: 130px;
+       i{
+        color: $primary-color;
+        font-size: 46px;
+        margin-top: 8px;
+        margin-left: 6px;
+       }
+     }
+   }
+  }
 }
